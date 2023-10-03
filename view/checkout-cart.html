@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Add jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Add Bootstrap JavaScript and CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/content.css">
+
+    <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/js/bootstrap.js"> -->
+    <script src="../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+
+    <!-- <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <link rel="icon" href="../img/icon/icon-removebg.png" type="image/icon type">
+    <style>
+        /* swiper-container {
+      width: 100%;
+      height: 100%;
+    } */
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hide{
+            display: none;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+<!-- start:nevbar -->
+<nevbar class="" style="font-family: Assistant,Helvetica,Arial,sans-serif!important;">
+    <header id="header" class="position-fixed top-0 w-100 z-2">
+        <div class="d-flex align-items-center justify-content-start bg-white bottom_shadow ps-4 pe-4">
+            <div class="mx-3 w-100 d-flex desktop-nav-justify">
+                <div class="col-md-12 desktop-nav-width">
+                    <div class="col-md-12 d-flex align-items-center justify-content-between">
+                        <!-- <div class="desktop-nav-dropdown">
+                            <button class="desktop-nav-dropdown openbtn" onclick="openNav()">&#9776;</button>
+                        </div> -->
+                        <div class="col-4 d-flex justify-content-start">
+                            <a href="">
+                                <div class="logo_image_prop">
+                                    <img src="../img/icon/icon.png" alt="" class="w-100 h-100">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center">
+                            <p class="" style="letter-spacing: 3px; font-size: 12px;font-weight: 600;">
+                                <span class="">BAG</span>
+                                <span class="">-------</span>
+                                <span class="">ADDRESS</span>
+                                <span class="">-------</span>
+                                <span class="">PAYMENT</span>
+                            </p>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end">
+                            <a class="d-flex justify-content-start text-decoration-none" href="">
+                                <div class="me-2 ">
+                                    <img width="30px" src="../img/abc/sprite-secure.png" alt="" class="w-0 h- 0">
+
+                                </div>
+                                <div class="align-items-center justify-content-center d-flex text-black" style="letter-spacing: 3px; font-size: 12px;font-weight: 600;">
+                                    100% SECURE
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</nevbar>
+<!-- end:nevbar -->
+
+    <!-- start:content -->
+    <div class="" style="">
+        <div class="" style="">
+            <div class="d-flex justify-content-center p-5">
+                <div class="col-8 ">
+                    <div class="col-12 d-flex">
+                        <div class="col-7 mt-4 pt-1 border-end pe-3">
+                            <div class="d-flex justify-content-between align-items-center  border p-4 mb-2">
+                                <div class="">
+                                    <p class="m-0">Check delivery time & services</p>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#EnterDeliveryDetails">ENTER PIN CODE</button>
+                                </div>
+                            </div>
+                            <div class="border p-4">
+                                <div class="">
+                                    <p class="m-0">Available Offers</p>
+                                </div>
+                                <div class="">
+                                    <ul class="">
+                                        <li class="">
+                                            <p class="">
+                                                10% Instant Discount on Kotak Credit and Debit Cards on a min spend of
+                                                ₹5,000. TCA
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                                <div class="">
+                                                    <ul class="">
+                                                        <li class="">
+                                                            <p class="">
+                                                                10% Instant Discount on Kotak Credit and Debit Cards on a
+                                                                min spend of ₹5,000. TCA
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="">
+                                                        <li class="">
+                                                            <p class="">
+                                                                10% Instant Discount on Kotak Credit and Debit Cards on a
+                                                                min spend of ₹5,000. TCA
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="">
+                                                        <li class="">
+                                                            <p class="">
+                                                                10% Instant Discount on Kotak Credit and Debit Cards on a
+                                                                min spend of ₹5,000. TCA
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="">
+                                                        <li class="">
+                                                            <p class="">
+                                                                10% Instant Discount on Kotak Credit and Debit Cards on a
+                                                                min spend of ₹5,000. TCA
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="">
+                                                        <li class="">
+                                                            <p class="">
+                                                                10% Instant Discount on Kotak Credit and Debit Cards on a
+                                                                min spend of ₹5,000. TCA
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="">
+                                                        <li class="">
+                                                            <p class="">
+                                                                10% Instant Discount on Kotak Credit and Debit Cards on a
+                                                                min spend of ₹5,000. TCA
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                                            role="button" aria-expanded="true" aria-controls="multiCollapseExample1">Show
+                                            More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center  p-4 mb-2">
+                                <div class="d-flex justify-content-center align-items-center pe-4">
+                                    <div class="">
+                                        <input type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="ms-3">
+                                        <p class="m-0">1/1 ITEMS SECTIED</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex">
+                                        <div class="d-flex justify-content-center align-items-center pe-4">
+                                            <a href="" class=" text-decoration-none  text-black">Danger</a>
+                                        </div>
+                                        <div class="border-end"></div>
+                                        <div class="d-flex justify-content-center align-items-center ps-4">
+                                            <a href="" class=" text-decoration-none  text-black">Danger</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex border p-2 mb-2">
+                                <div class="col-2">
+                                    <img class="img-fluid"
+                                        src="/img/item-img/c393f96b-daca-4e20-9554-8d20e300e28f1680338197400-Puma-Men-Round-Neck-Brand-Logo-Printed-T-shirt-3281680338196-1.webp"
+                                        alt="">
+                                </div>
+                                <div class="">
+                                    <div class=" ">
+                                        <p class="fw-bold m-0 ps-3">Puma</p>
+                                        <p class="fs-10 m-0 ps-3">Men Round Neck Brand Logo Printed T-shirt</p>
+                                        <p class="fs-10 text-body-secondary m-0 ps-3">
+                                            <span class="">Sold by: Sold by: </span>
+                                            <span class="">Omnitech Retail </span>
+                                        </p>
+    
+                                        <div class="fs-10 ps-3">
+                                            <button type="button"
+                                                class="btn btn-secondary btn-sm bg-secondary-subtle border-0 text-black me-2">Size
+                                                : XL</button>
+                                            <button type="button"
+                                                class="btn btn-secondary btn-sm bg-secondary-subtle border-0 text-black me-2">QTY
+                                                : 1</button>
+                                        </div>
+                                        <div class="fs-10 ps-3">
+                                            <span class="fw-bold">Rs. 250</span>
+                                            <span class="text-decoration-line-through">499</span>
+                                            <span class="text-danger">(40% off)</span>
+                                        </div>
+                                        <div class="fs-10 ps-3">
+                                            <span class="fw-bold">14 Days</span>
+                                            <span class="">Return Abailable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center  border p-2 mb-2">
+                                <div class="">
+                                    <p class="m-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-bookmark" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                        </svg>
+                                        <span class="">Add More From Wishlist</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 ps-3">
+                            <div class="p-4 mb-2 border-bottom ">
+                                <div class="">
+                                    <p class="m-0"> Coupons</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center ">
+                                    <div class="">
+    
+                                        <p class="m-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
+                                                <path
+                                                    d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
+                                            </svg>
+                                            <span>Apply Coupons</span>
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ApplyCoupon">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 mb-2 border-bottom ">
+                                <div class="mb-3">
+                                    <p class="m-0 fs-10"> GIFTING & PERSONALISATION</p>
+                                </div>
+                                <div class="d-flex border" style="background: #fff1ec;">
+                                    <div class="">
+                                        <div class="col-2">
+                                            <img width="50px"
+                                                src="https://constant.myntassets.com/checkout/assets/img/gift-big.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="fs-10 p-3">
+                                        <div class="fw-bold">Buying for a loved one?</div>
+                                        <div class="text-secondary">
+                                            <span>Gift wrap and personalised message on card, Only for </span>
+                                            <span>25</span>
+                                            <a href="" class="text-decoration-none text-danger fw-bold">ADD GIFT WRAP</a>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="p-4 mb-2 border-bottom ">
+                                <div class="">
+                                    <p class="m-0"> PRICE DETAILS ( 1 Item )</p>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+    
+                                            <p class="m-0">
+                                                <span>Total MRP</span>
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p type="button" class="">5</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+    
+                                            <p class="m-0">
+                                                <span>Discount on MRP</span>
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p type="button" class="">-2</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+    
+                                            <p class="m-0">
+                                                <span>Coupon Discount</span>
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p type="button" class="">Apply Coupon</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+    
+                                            <p class="m-0">
+                                                <span>Convenience Fee</span>
+                                                <span></span>
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p type="button" class="">99 Free</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                                <div class="border-top border-black">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+    
+                                            <p class="m-0">
+                                                <span>Total Amount</span>
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p type="button" class="">3</p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <button type="button"
+                                            class="btn btn-primary btn-sm col-12 border-danger rounded-0 bg-danger ">Small
+                                            button</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-2" style="background: #fff5f7;">
+                        <div class=" p-2">
+                            <p class="border-top border-2 border-black pt-3">
+                                You may also like:
+                            </p>
+                        </div>
+                        <div class="">
+                            <div class="d-flex flex-wrap">
+                                <div class="col-3 p-2 mb-3">
+                                    <div class="">
+                                        <div class="border">
+                                            <div class="position-relative">
+                                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                    class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="mt-1 bg-white">
+                                                <p class="btn fw-bold m-0">Roadster</p>
+                                                <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                                <div class="fs-10 ps-3">
+                                                    <span class="fw-bold">Rs. 250</span>
+                                                    <span class="text-decoration-line-through">499</span>
+                                                    <span class="text-danger">(40% off)</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary bg-transparent text-danger border border-top rounded-0" type="button">ADD TO BAG </button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-2 mb-3">
+                                    <div class="">
+                                        <div class="border">
+                                            <div class="position-relative">
+                                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                    class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="mt-1 bg-white">
+                                                <p class="btn fw-bold m-0">Roadster</p>
+                                                <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                                <div class="fs-10 ps-3">
+                                                    <span class="fw-bold">Rs. 250</span>
+                                                    <span class="text-decoration-line-through">499</span>
+                                                    <span class="text-danger">(40% off)</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary bg-transparent text-danger border border-top rounded-0" type="button">ADD TO BAG </button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-2 mb-3">
+                                    <div class="">
+                                        <div class="border">
+                                            <div class="position-relative">
+                                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                    class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="mt-1 bg-white">
+                                                <p class="btn fw-bold m-0">Roadster</p>
+                                                <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                                <div class="fs-10 ps-3">
+                                                    <span class="fw-bold">Rs. 250</span>
+                                                    <span class="text-decoration-line-through">499</span>
+                                                    <span class="text-danger">(40% off)</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary bg-transparent text-danger border border-top rounded-0" type="button">ADD TO BAG </button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-2 mb-3">
+                                    <div class="">
+                                        <div class="border">
+                                            <div class="position-relative">
+                                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                    class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="mt-1 bg-white">
+                                                <p class="btn fw-bold m-0">Roadster</p>
+                                                <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                                <div class="fs-10 ps-3">
+                                                    <span class="fw-bold">Rs. 250</span>
+                                                    <span class="text-decoration-line-through">499</span>
+                                                    <span class="text-danger">(40% off)</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary bg-transparent text-danger border border-top rounded-0" type="button">ADD TO BAG </button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-2 mb-3">
+                                    <div class="">
+                                        <div class="border">
+                                            <div class="position-relative">
+                                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                    class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="mt-1 bg-white">
+                                                <p class="btn fw-bold m-0">Roadster</p>
+                                                <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                                <div class="fs-10 ps-3">
+                                                    <span class="fw-bold">Rs. 250</span>
+                                                    <span class="text-decoration-line-through">499</span>
+                                                    <span class="text-danger">(40% off)</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary bg-transparent text-danger border border-top rounded-0" type="button">ADD TO BAG </button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-2 mb-3">
+                                    <div class="">
+                                        <div class="border">
+                                            <div class="position-relative">
+                                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                    class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="mt-1 bg-white">
+                                                <p class="btn fw-bold m-0">Roadster</p>
+                                                <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                                <div class="fs-10 ps-3">
+                                                    <span class="fw-bold">Rs. 250</span>
+                                                    <span class="text-decoration-line-through">499</span>
+                                                    <span class="text-danger">(40% off)</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary bg-transparent text-danger border border-top rounded-0" type="button">ADD TO BAG </button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-2 mb-3">
+                                    <div class="">
+                                        <div class="border">
+                                            <div class="position-relative">
+                                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                    class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="mt-1 bg-white">
+                                                <p class="btn fw-bold m-0">Roadster</p>
+                                                <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                                <div class="fs-10 ps-3">
+                                                    <span class="fw-bold">Rs. 250</span>
+                                                    <span class="text-decoration-line-through">499</span>
+                                                    <span class="text-danger">(40% off)</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary bg-transparent text-danger border border-top rounded-0" type="button">ADD TO BAG </button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-2 mb-3">
+                                    <div class="">
+                                        <div class="border">
+                                            <div class="position-relative">
+                                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                    class="img-fluid" alt="...">
+                                            </div>
+                                            <div class="mt-1 bg-white">
+                                                <p class="btn fw-bold m-0">Roadster</p>
+                                                <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                                <div class="fs-10 ps-3">
+                                                    <span class="fw-bold">Rs. 250</span>
+                                                    <span class="text-decoration-line-through">499</span>
+                                                    <span class="text-danger">(40% off)</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-primary bg-transparent text-danger border border-top rounded-0" type="button">ADD TO BAG </button>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- start:modal -->
+  <div class="modal fade" id="EnterDeliveryDetails" tabindex="-1" role="dialog" aria-labelledby="EnterDeliveryDetailsTitle" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="EnterDeliveryDetailsTitle">Enter Delivery Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="bg-secondary-subtle d-flex justify-content-center align-items-center p-2 mb-4"></div>
+        <div class="modal-body pt-0">
+            
+            <div class="input-group">
+                <div class="d-flex justify-content-between w-100 border pt-2 pb-2 border-black">
+                    <input type="text" class="form-control border-0" placeholder="Enter Pincode" aria-label="Enter Pincode" aria-describedby="basic-addon2">
+                    <button class="input-group-text border-0 bg-transparent text-danger fw-bold" id="basic-addon2">CHECK</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary-subtle d-flex justify-content-center align-items-center p-2"> OR </div>
+        <div class="modal-footer p-1">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="w-100 btn btn-primary bg-transparent border-black text-black rounded-0" data-toggle="modal" data-dismiss="modal" data-target="#AddNewAddress">
+            Add New Address
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="AddNewAddress" tabindex="-1" role="dialog" aria-labelledby="AddNewAddressTitle" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="AddNewAddressTitle">Add New Address</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body overflow-auto" style="height: 500px;">
+          <div class="card border-0">
+            <div class="">
+                <div class="p-2">
+                    <p class="">CONTACT DETAILS</p>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Name*">
+                    <label for="floatingInput">Name*</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floating" placeholder="Mobile No*">
+                    <label for="floating">Mobile No*</label>
+                </div>
+            </div>
+            <div class="mt-4">
+                <div class="p-2">
+                    <p class="">ADDRESS</p>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Pin Code*">
+                    <label for="floatingInput">Pin Code*</label>
+                    <div class="">
+                        <!-- <p class="text-danger m-0 p-2">*</p> -->
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Name*">
+                    <label for="floatingInput">Address (House No, Building, Street, Area)*</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floating" placeholder="Locality / Town">
+                    <label for="floating">Locality / Town*</label>
+                </div>
+                <div class="d-flex p-0 mb-3 col-12">
+                    <div class="form-floating p-0 pe-1 col-6 m-0">
+                        <input type="text" class="form-control" id="floatingInputDisabled" placeholder="City / District*" disabled>
+                        <label for="floatingInputDisabled">City / District*</label>
+                    </div>
+                    <div class="form-floating p-0 ps-1 col-6 m-0">
+                        <input type="text" class="form-control" id="floatingInputDisabled" placeholder="State*" disabled>
+                        <label for="floatingInputDisabled">State*</label>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="" role="group" aria-label="Basic radio toggle button group ">
+                    <input type="radio" class="btn-check check-box" onclick="show1();" name="btnradio" id="btnradio1" autocomplete="off">
+                    <label class="btn btn-outline-danger rounded-5" for="btnradio1">HOME</label>
+                  
+                    <input type="radio" class="btn-check" onclick="show2();" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-danger rounded-5" for="btnradio3">WORK</label>
+                </div>
+                <div id="div1" class="">
+                    <div class="d-flex">
+                        <div class="me-2 me-2 mb-2">
+                            <input class="accent-danger" type="checkbox" name="" id="">
+                        </div>
+                        <p class="m-0">Make this my default address</p>
+                    </div>
+                </div>
+                <div id="div2" class="hide">
+                    <div class="d-flex">
+                        <div class="me-2 me-2 mb-2">
+                            <input class="accent-danger" type="checkbox" name="" id="">
+                        </div>
+                        <p class="m-0">Open on saturday</p>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-2 me-2 mb-2">
+                            <input class="accent-danger" type="checkbox" name="" id="">
+                        </div>
+                        <p class="m-0">Open on sunday</p>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-2 me-2 mb-2">
+                            <input class="accent-danger" type="checkbox" name="" id="">
+                        </div>
+                        <p class="m-0">Make this my default address</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="btn btn-primary bg-danger border-danger w-100">Add Address</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ApplyCoupon" tabindex="-1" role="dialog" aria-labelledby="ApplyCouponTitle" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ApplyCouponTitle">Apply Coupon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class=" overflow-auto pt-4" style="height: 500px;">
+            <div class="input-group p-3">
+                <div class="d-flex justify-content-between w-100 border pt-2 pb-2 border-black">
+                    <input type="text" class="form-control border-0" placeholder="Enter Pincode" aria-label="Enter Pincode" aria-describedby="basic-addon2">
+                    <button class="input-group-text border-0 bg-transparent text-danger fw-bold" id="basic-addon2">CHECK</button>
+                </div>
+            </div>
+            <div class="bg-secondary-subtle d-flex justify-content-center align-items-center p-1 mb-4 mt-4"></div>
+            <div class="mt-3 w-100">
+                <div class="p-3">
+                    <div class="d-flex">
+                        <div class="me-2 col-1">
+                            <input type="checkbox" name="" id="" checked>
+                        </div>
+                        <div class="col-11">
+                            <div class="mb-2">
+                                <span class="border-dashed border-danger text-danger p-2">MYNTRA200</span>
+                            </div>
+                            <div class="text-body-secondary">
+                                <p class=" m-0 fw-bold">save $200</p>
+                                <p class=" m-0"> Rs. 200 off on minimum purchase of Rs. 999 .</p>
+                                <p class=" m-0">Expires on: 31st December 2023 | 12:00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="d-flex align-items-center p-2 ps-4 w-100 bg-body-tertiary text-body-secondary fw-bold mt-3 mb-3 ">UNLOCK MORE COUPONS</div>
+                </div>
+                <div class="p-3 text-body-secondary ">
+                    <div class="d-flex">
+                        <div class="me-2 col-1">
+                            <input type="checkbox" name="" id="" disabled>
+                        </div>
+                        <div class="col-11">
+                            <div class="mb-2">
+                                <span class="border-dashed border-black p-2">MYNTRA200</span>
+                            </div>
+                            <div class="text-body-secondary">
+                                <p class=" m-0 ">save $200</p>
+                                <p class=" m-0"> Rs. 200 off on minimum purchase of Rs. 999 .</p>
+                                <p class=" m-0">Expires on: 31st December 2023 | 12:00 AM</p>
+                            </div>
+                            <div class="border-top w-100 mt-3 pt-3 ">
+                                <p class="m-0">Shop for Rs. 500 more to apply.</p>
+                                <a href="#" class="m-0 text-danger text-decoration-none">
+                                    <span>View applicable items </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <!-- <div class="d-flex justify-content-center"> -->
+                <div class="col-12 d-flex justify-content-around">
+                    <div class="col-4">
+                        <p class="fs-10 text-body-secondary m-0 white-space-nowrap">Maximum savings:</p>
+                        <p class="fw-bold">Rs. 200</p>
+                    </div>
+                    <div class="col-8">
+                        <button type="button" class="col-12 btn btn-primary bg-danger border-danger">APPLY</button>
+                    </div>
+                </div>
+            <!-- </div>  -->
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- end:modal -->
+    
+    <!-- end:content -->
+
+<!-- start:footer -->
+<footer class="d-flex  row fs-small  p-5" style="background-color: rgb(250, 251, 252);">
+    <div class="media-999-block  text-secondary m-5">
+        <div class="d-flex">
+            <ul class="col-12">
+                <p class="fw-bold">SHOP FOR</p>
+    
+                <p class="lh-sm"><span>Men</span> |
+                    <span>Women</span> |
+                    <span>Kids</span> |
+                    <span>Home & Living</span> |
+                    <span>Beauty</span> |
+                    <span>Gift Cards</span> |
+                    <span>Myntra Insider</span>
+                </p>
+    
+                <p class="mt-4 fw-bold">KEEP IN TOUCH</p>
+                <div class="d-flex">
+                    <div class="ms-0">
+                        <img width="25px" src="../img/abc/facebook-logo.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="ms-2">
+                        <img width="25px" src="../img/abc/insta.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="ms-2">
+                        <img width="25px" src="../img/abc/twitter-logo.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="ms-2">
+                        <img width="25px" src="../img/abc/yt.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="">
+                    <p class="fw-bold">CUSTOMER POLICIES</p>
+    
+                    <p> 
+                        <span>Contact Us</span>
+                        <span>FAQ</span>
+                        <span>T&C</span>
+                        <span>Terms Of Use</span>
+                        <span>Track Orders</span>
+                        <span>Shipping</span>
+                        <span>Cancellation</span>
+                        <span>Returns</span>
+                        <span>Privacy policy</span>
+                        <span>Grievance Officer</span>
+                    </p>
+                </div>
+    
+                <p class="fw-bold">USEFUL LINKS</p>
+    
+                <span>Blog</span>
+                <span>Careers</span>
+                <span>Site Map</span>
+                <span>Corporate Information</span>
+                <span>Whitehat</span>
+            </ul>
+            
+            
+    
+        </div>
+    </div>
+    <div class="media-999-none col-12 text-secondary m-5 mt-0 mb-0 p-5 pt-0 mb-0">
+        <div class="d-flex p-5 pt-0 pb-0">
+            <ul class="col-2 list-unstyled lh-lg">
+                <p class="fw-bold">ONLINE SHOPPING</p>
+    
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+                <li>Home & Living</li>
+                <li>Beauty</li>
+                <li>Gift Cards</li>
+                <li>Myntra Insider</li>
+    
+                <p class="fw-bold">USEFUL LINKS</p>
+    
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Site Map</li>
+                <li>Corporate Information</li>
+                <li>Whitehat</li>
+            </ul>
+            <ul class="col-2 list-unstyled lh-lg">
+                <p class="fw-bold">CUSTOMER POLICIES</p>
+    
+                <li>Contact Us</li>
+                <li>FAQ</li>
+                <li>T&C</li>
+                <li>Terms Of Use</li>
+                <li>Track Orders</li>
+                <li>Shipping</li>
+                <li>Cancellation</li>
+                <li>Returns</li>
+                <li>Privacy policy</li>
+                <li>Grievance Officer</li>
+            </ul>
+            <ul class="col-3">
+                <p class="fw-bold">EXPERIENCE MYNTRA APP ON MOBILE</p>
+                <div class="d-flex justify-content-around">
+                    <div class="col-5">
+                        <img src="../img/abc/google_play.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-5">
+                        <img src="../img/abc/google_play.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <p class="mt-4 fw-bold">KEEP IN TOUCH</p>
+                <div class="d-flex">
+                    <div class="col-2">
+                        <img width="25px" src="../img/abc/facebook-logo.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-2">
+                        <img width="25px" src="../img/abc/insta.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-2">
+                        <img width="25px" src="../img/abc/twitter-logo.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-2">
+                        <img width="25px" src="../img/abc/yt.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </ul>
+            <ul class="col-3">
+                <div class="d-flex">
+                    <div class="col-2">
+                        <img src="../img/abc/original.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-10">
+                        <p>
+                            <span class="fw-bold">100% ORIGINAL</span>
+                            guarantee for all products at myntra.com
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-2">
+                        <img src="../img/abc/Return-Window-image.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-10">
+                        <p>
+                            <span class="fw-bold">Return within 14days</span>
+                            of receiving your order
+                        </p>
+                    </div>
+                </div>
+            </ul>
+    
+        </div>
+    </div>
+    <div class="m-5 mt-0 mb-0 p-5 pt-0 mb-0">
+        <div class="col-12  p-5 pt-0 pb-0">
+            <p class="fw-bold"> POPULAR SEARCHES
+                <hr>
+            </p>
+        </div>
+        <div class="col-12  p-5 pt-0 pb-0">
+                <div class="desktop-pSearchlinks text-secondary lh-lg fs-6 text" data-reactid="127">
+                    <a class="text-secondary text-decoration-none" href="/makeup" data-reactid="129">
+                    Makeup</a> | 
+                    <a class="text-secondary text-decoration-none" href="/girls-dresses" data-reactid="133">
+                    Dresses ForGirls</a> | 
+                    <a class="text-secondary text-decoration-none" href="/tshirts"
+                    data-reactid="137">
+                    T-Shirts</a> | 
+                    <a class="text-secondary text-decoration-none" href="/sandals" data-reactid="141">
+                    Sandals</a> | 
+                    <a class="text-secondary text-decoration-none" href="/headphones" data-reactid="145">
+                    Headphones</a> | 
+                    <a class="text-secondary text-decoration-none" href="/babydolls" data-reactid="149">
+                    Babydolls</a> | 
+                    <a class="text-secondary text-decoration-none" href="/men-blazers" data-reactid="153">
+                    Blazers ForMen</a> | 
+                    <a class="text-secondary text-decoration-none" href="/handbags"
+                    data-reactid="157">
+                    Handbags</a> | 
+                    <a class="text-secondary text-decoration-none" href="/women-watches" data-reactid="161">
+                    LadiesWatches</a> | 
+                    <a class="text-secondary text-decoration-none" href="/bags"
+                    data-reactid="165">
+                    Bags</a> | 
+                    <a class="text-secondary text-decoration-none" href="/sports-shoes" data-reactid="169">
+                    Sport Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/reebok-shoes" data-reactid="173">
+                    Reebok Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/puma-shoes" data-reactid="177">
+                    Puma Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/men-boxers" data-reactid="181">
+                    Boxers</a> | 
+                    <a class="text-secondary text-decoration-none" href="/wallets" data-reactid="185">
+                    Wallets</a> | 
+                    <a class="text-secondary text-decoration-none" href="/women-shirts-tops-tees"
+                    data-reactid="189">
+                    Tops</a> | 
+                    <a class="text-secondary text-decoration-none" href="/earrings" data-reactid="193">
+                    Earrings</a> | 
+                    <a class="text-secondary text-decoration-none" href="/fastrack-watches" data-reactid="197">
+                    Fastrack
+                    Watches</a><a
+                    href="/women-kurtas-kurtis-suits" data-reactid="201">
+                    Kurtis</a> | 
+                    <a class="text-secondary text-decoration-none" href="/nike" data-reactid="205">
+                    Nike</a> | 
+                    <a class="text-secondary text-decoration-none" href="/smart-watches" data-reactid="209">
+                    SmartWatches</a> | 
+                    <a class="text-secondary text-decoration-none" href="/titan-watches"
+                    data-reactid="213">TitanWatches</a> | 
+                    <a class="text-secondary text-decoration-none" href="/saree-blouse"
+                    data-reactid="217">DesignerBlouse</a> | 
+                    <a class="text-secondary text-decoration-none" href="/gown"
+                    data-reactid="221">
+                    Gowns</a> | 
+                    <a class="text-secondary text-decoration-none" href="/rings" data-reactid="225">
+                    Rings</a> | 
+                    <a class="text-secondary text-decoration-none" href="/cricket-shoes" data-reactid="229">
+                    CricketShoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/forever-21"
+                    data-reactid="233">Forever21</a> | 
+                    <a class="text-secondary text-decoration-none" href="/eye-makeup"
+                    data-reactid="237">EyeMakeup</a> | 
+                    <a class="text-secondary text-decoration-none" href="/photo-frames"
+                    data-reactid="241">PhotoFrames</a> | 
+                    <a class="text-secondary text-decoration-none" href="/punjabi-suits"
+                    data-reactid="245">PunjabiSuits</a> | 
+                    <a class="text-secondary text-decoration-none" href="/bikini"
+                    data-reactid="249">
+                    Bikini</a> | 
+                    <a class="text-secondary text-decoration-none" href="/shop/myntra-fashion-superstar"
+                    data-reactid="253">MyntraFashion Show</a> | 
+                    <a class="text-secondary text-decoration-none" href="/lipstick"
+                    data-reactid="257">
+                    Lipstick</a> | 
+                    <a class="text-secondary text-decoration-none" href="/saree" data-reactid="261">
+                    Saree</a> | 
+                    <a class="text-secondary text-decoration-none" href="/watches" data-reactid="265">
+                    Watches</a> | 
+                    <a class="text-secondary text-decoration-none" href="/dresses" data-reactid="269">
+                    Dresses</a> | 
+                    <a class="text-secondary text-decoration-none" href="/lehengas" data-reactid="273">
+                    Lehenga</a> | 
+                    <a class="text-secondary text-decoration-none" href="/nike-shoes" data-reactid="277">
+                    Nike Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/goggles" data-reactid="281">
+                    Goggles</a> | 
+                    <a class="text-secondary text-decoration-none" href="/bra" data-reactid="285">
+                    Bras</a> | 
+                    <a class="text-secondary text-decoration-none" href="/men-suits" data-reactid="289">
+                    Suit</a> | 
+                    <a class="text-secondary text-decoration-none" href="/chinos" data-reactid="293">
+                    Chinos</a> | 
+                    <a class="text-secondary text-decoration-none" href="/shoes" data-reactid="297">
+                    Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/adidas-shoes" data-reactid="301">
+                    Adidas Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/woodland-shoes" data-reactid="305">
+                    Woodland Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/jewellery"data-reactid="309">Jewellery</a> | 
+                    <a class="text-secondary text-decoration-none" href="/designer-saree" data-reactid="313">Designers Sarees</a>
+                </div>  
+                <div class="d-flex justify-content-between mt-5">
+                    <p>In case of any concern, Contact Us</p>
+                    <p>© 2023 www.myntra.com. All rights reserved.</p>
+                </div>
+        </div>
+    </div>
+</footer>
+<!-- end:footer  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<script type="module">
+    //   import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+    //   const swiper = new Swiper('.swiper', {
+    //   // Optional parameters
+    //   direction: 'vertical',
+    //   loop: true,
+
+    //   // If we need pagination
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //   },
+
+    //   // Navigation arrows
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+
+    //   // And if we need scrollbar
+    //   scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //   },
+    // });
+</script>
+<script>
+
+</script>
+<script>
+
+    var header = document.getElementById('body');
+    var click = document.querySelectorAll('div button');
+    var menu = document.querySelector('#st-container');
+    var pusher = document.querySelector('st-pusher');
+    // to store the corresponding effect
+    var effect;
+
+    // adding a click event to all the buttons
+    for (var i = 0; i < click.length; i++) {
+        click[i].addEventListener('click', addClass)
+    }
+
+    pusher.addEventListener('click', closeMenu);
+
+
+
+    function addClass(e) {
+        // to get the correct effect
+        effect = e.target.getAttribute('data-effect');
+        // adding the effects
+        menu.classList.toggle(effect);
+        menu.classList.toggle('st-menu-open');
+        header.classList.toggle('text-opacity-25');
+
+        // console.log(e.target.getAttribute('data-effect'));
+    }
+    // menu.classList.toggle('st-menu-open');
+
+    function closeMenu(el) {
+        // if the click target has this class then we close the menu by removing all the classes
+        if (el.target.classList.contains('st-pusher')) {
+            menu.classList.toggle(effect);
+            menu.classList.toggle('st-menu-open');
+            // console.log(el.target);
+        }
+    }
+
+
+    function show1(){
+        document.getElementById('div2').style.display ='none';
+        document.getElementById('div1').style.display ='block';
+    }
+    function show2(){
+        document.getElementById('div1').style.display = 'none';
+        document.getElementById('div2').style.display = 'block';
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>

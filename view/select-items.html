@@ -1,0 +1,2384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/content.css">
+
+    <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/js/bootstrap.js"> -->
+    <script src="../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+
+    <link rel="stylesheet/scss" type="text/css" href="../css/style1.scss">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <link rel="icon" href="../img/icon/icon-removebg.png" type="image/icon type">
+    <style>
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif !important;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .mainDiv:hover {
+
+            box-shadow: 0.5px 0px 10px;
+
+        }
+    </style>
+</head>
+
+<!-- start:nevbar -->
+<nevbar class="">
+    <header id="header" class="position-fixed top-0 w-100 z-2">
+        <div class="d-flex align-items-center justify-content-start bg-white bottom_shadow ">
+            <div class="mx-3 w-100 d-flex desktop-nav-justify">
+                <div class="col-md-6 desktop-nav-width">
+                    <div class="col-12 d-flex align-items-center justify-content-start">
+                        <div class="desktop-nav-dropdown">
+                            <button class="desktop-nav-dropdown openbtn d-block d-md-none" onclick="openNav()">&#9776;</button>
+                          
+                        </div>
+                        <div class="col-2">
+                            <a href="">
+                                <div class="logo_image_prop">
+                                    <img src="../img/icon/icon.png" alt="" class="w-100 h-100">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-10  desktop-nav-hide ml-3">
+                            <ul class="d-flex align-items-center justify-content-start list-unstyled mb-0">
+                                <li class="px-md-3 py-4 nav-item-dropdown border-danger">
+                                    <a href="../view/home.html"
+                                        class="desktop-nav text-decoration-none text-black text-bold text-uppercase">MEN</a>
+                                </li>
+                                <div class="dropdown-item-card text-start  row ">
+                                    <div class="border-bottom border-5 "
+                                        style="height: 10px;width: 10%;border-color: transparent !important;"></div>
+                                    <ul style=""
+                                        class="dropdown-item-list pl-1 border-0 list-unstyled card row p-10 rounded-0 bg-body-tertiary">
+                                        <li class="dropdown-li col-3">
+                                            <ul class="p-0 list-unstyled">
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+
+                                                <h6 class="color-l6">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <h6 class="text-danger">Topwear</h6>
+                                                <h6 class="text-danger">Topwear</h6>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <li class="px-md-3 py-4  nav-item-dropdown border-warning">
+                                    <a href="../view/home.html"
+                                        class="desktop-nav text-decoration-none text-black text-bold text-uppercase">WOMEN</a>
+                                </li>
+                                <div class="dropdown-item-card text-start  row">
+                                    <div class="border-bottom border-5 "
+                                        style="border-color: transparent !important; height: 10px;width: 10%;"></div>
+                                    <ul style=""
+                                        class="dropdown-item-list pl-1 border-0 list-unstyled card row p-10 rounded-0 bg-body-tertiary">
+                                        <li class="dropdown-li col-3 ">
+                                            <ul class="p-0 list-unstyled">
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <h6 class="text-warning">Topwear</h6>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <li class="px-md-3 py-4  nav-item-dropdown border-primary">
+                                    <a href="../view/home.html"
+                                        class="desktop-nav text-decoration-none text-black text-bold text-uppercase">KIDS</a>
+                                </li>
+                                <div class="dropdown-item-card text-start  row">
+                                    <div class="border-bottom  border-5 "
+                                        style="height: 10px;width: 10%;border-color: transparent !important;"></div>
+                                    <ul style=""
+                                        class="dropdown-item-list pl-1 border-0 list-unstyled card row p-10 rounded-0 bg-body-tertiary">
+                                        <li class="dropdown-li col-3">
+                                            <ul class="p-0 list-unstyled">
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <h6 class="text-primary">Topwear</h6>
+                                                <h6 class="text-primary">Topwear</h6>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <li class="px-md-3 py-4  nav-item-dropdown border-warning">
+                                    <a href="../view/home-living.html"
+                                        class="desktop-nav text-decoration-none text-black text-bold text-uppercase white-space-nowrap">HOME
+                                        & LIVING</a>
+                                </li>
+                                <div class="dropdown-item-card text-start  row ">
+                                    <div class="border-bottom border-5 "
+                                        style="height: 10px;width: 10%;border-color: transparent !important;"></div>
+                                    <ul style=""
+                                        class="dropdown-item-list pl-1 border-0 list-unstyled card row p-10 rounded-0 bg-body-tertiary">
+                                        <li class="dropdown-li col-3">
+                                            <ul class="p-0 list-unstyled">
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <h6 class="text-warning">Topwear</h6>
+                                                <h6 class="text-warning">Topwear</h6>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <li class="px-md-3 py-4  nav-item-dropdown border-info">
+                                    <a href="../view/items.html"
+                                        class="desktop-nav text-decoration-none text-black text-bold text-uppercase">
+                                        BEAUTY</a>
+                                </li>
+                                <div class="dropdown-item-card text-start  row">
+                                    <div class="border-bottom border-5 "
+                                        style="height: 10px;width: 10%;border-color: transparent !important;"></div>
+                                    <ul style=""
+                                        class="dropdown-item-list pl-1 border-0 list-unstyled card row p-10 rounded-0 bg-body-tertiary">
+                                        <li class="dropdown-li col-3">
+                                            <ul class="p-0 list-unstyled">
+                                                <h6 class="text-info">Topwear</h6>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+
+                                                <h6 class="color-l6">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-info">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-info">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-info">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-info">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-li col-3">
+                                            <ul class="list-unstyled">
+                                                <h6 class="text-info">Topwear</h6>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                        Shirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item"
+                                                        href="../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                </li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                </li>
+                                                <li class="dropdown-li">
+                                                    <hr style="width: 150px;">
+                                                </li>
+                                                <h6 class="text-info">Topwear</h6>
+                                                <h6 class="text-info">Topwear</h6>
+                                                <h6 class="text-info">Topwear</h6>
+                                                <h6 class="text-info">Topwear</h6>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <li class="px-md-3 py-4  nav-item-dropdown">
+                                    <a class="desktop-nav nav-link position-relative text-uppercase" href="#">Studio
+                                        <sup
+                                            class="text-decoration-none text-danger text-uppercase position-absolute top-0 start-100 translate-middle">new</sup>
+                                    </a>
+                                </li>
+                                <div style="left: 400px;" class="dropdown-item-card text-start z-1">
+                                    <div class="border-bottom border-5 "
+                                        style="height: 10px;width: 75px;margin-left: 215px;border-color: transparent !important;">
+                                    </div>
+                                    <ul style="padding: 20px; height: 500px;    width: 550px;overflow: hidden;"
+                                        class="bg-body-tertiary border-0 list-unstyled card row p-10 rounded-0">
+                                        <img src="https://imgs.search.brave.com/Lov13eP5D8IjGH-8dFcoU9PMeSU1LEU2h-u8iGzm_mw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA1/MzMvMjA4OS9maWxl/cy9wbGFjZWhvbGRl/ci1pbWFnZXMtaW1h/Z2VfbGFyZ2UucG5n/P2Zvcm1hdD1qcGcm/cXVhbGl0eT05MCZ2/PTE1MzAxMjkwODE"
+                                            class="img-thumbnail" alt="...">
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-6 d-flex justify-content-end">
+                   <div class="col-md-8 d-lg-flex d-none desktop-nav-search-input-box">
+                    <div class="desktop-nav-search-input-box-in input-group mb-3 pt-3 align-items-center justify-content-start">
+                        <div class="input-group-prepend ">
+                            <span style="background: #eaeaec;"
+                                class="rounded-end-0 ps-3 input-group-text p-2 shadow-none border-0"
+                                id="basic-addon1">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </i></span>
+                            </span>
+                        </div>
+                        <input style="background: #eaeaec;" type="text"
+                            class="form-control p-2 shadow-none border-0 desktop-nav-search-input"
+                            placeholder="Search for products, brands and more" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <ul class="d-flex align-items-center justify-content-start list-unstyled mb-0">
+                            <li class="px-md-3 py-2 text-center d-md-none">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </span>
+                            </li>
+                            <a href="#" class="text-decoration text-secondary">
+                                <li class="px-md-3 py-2 nav-profile-dropdown border-danger desktop-nav-right text-center desktop-nav-hide">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                                        </svg>
+                                    </span>
+                                    <a href="../view/my/profile.html" class="fs-10  text-decoration-none text-black text-bold">Profile</a>
+                                </li>
+                            </a>
+                            <div class="dropdown-profile-list text-start  row">
+                                <div style="" class="dropdown-item-card text-start z-1">
+                                    <div class="border-bottom border-5 "
+                                        style="height: 10px;width: 75px;margin-left: 215px;border-color: transparent !important;">
+                                    </div>
+                                    <ul style="padding: 20px; height: 500px;    width: 300px;overflow: hidden;"
+                                        class="bg-body-tertiary border-0 list-unstyled card row p-10 rounded-0">
+                                        <div>
+                                            <div class="">
+                                                <h6>Welcome</h6>
+                                                <p>To access account and manage orders</p>
+                                                <a href="../view/forms/login-or-signup.html" type="button" class="btn btn-outline-danger">login / Signup</a>
+                                                <hr>
+                                            </div>
+                                            <div>
+                                                <ul class="list-unstyled">
+                                                    <li class="">
+                                                        <a href="/view/my/my-orders.html" class="text-decoration-none text-black">
+                                                            Orders
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/view/my/wishlist-empty.html" class="text-decoration-none text-black">
+                                                            Wishlist
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="../view/my/" class="text-decoration-none text-black">
+                                                            Gift Cards
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="../view/my/" class="text-decoration-none text-black">
+                                                            Contact Us
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="../view/my/" class="text-decoration-none text-black">
+                                                            Myntra InsiderNew
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <hr>
+                                                <ul class="list-unstyled">
+                                                    <li class="">
+                                                        <a href="../view/my/myntracredit.html" class="text-decoration-none text-black">
+                                                            Myntra Credit
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="../view/my/coupons.html" class="text-decoration-none text-black">
+                                                            Coupons
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="../view/my/savedcards.html" class="text-decoration-none text-black">
+                                                            Saved Cards
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="../view/my/savedUPI.html" class="text-decoration-none text-black">
+                                                            Saved VPA
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="../view/my/address.html" class="text-decoration-none text-black">
+                                                            Saved Addresses
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <li class="px-md-3 py-2 desktop-nav-right text-center">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                    </svg>
+                                </span>
+                                <a href="../view/wishlist.html"
+                                    class="fs-10 desktop-nav text-decoration-none text-black text-bold desktop-nav-hide">Wishlist</a>
+                            </li>
+                            <li class="px-md-3 py-2 desktop-nav-right text-center">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                    </svg>
+                                </span>
+                                <a href="../view/checkout-cart-empty.html"
+                                    class="fs-10 desktop-nav text-decoration-none text-black text-bold desktop-nav-hide">bag</a>
+                            </li>
+                        </ul>
+                    </div>
+               </div> 
+            </div>
+        </div>
+    </header>
+    <!-- start:sidebar -->
+    <div id="mySidenav" class="sidenav bg-body-tertiary d-md-none z-3 pt-5">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="st-container" class="st-container">
+            <nav class="st-menu st-effect-1 position-relative lh-lg" id="menu-1">
+                <img class="img-fluid"
+                    src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_400,c_limit,fl_progressive/assets/images/2023/1/25/a1bd0077-bedc-4b6e-a040-90789747dd881674670405165-offer-banner-400-1080x496-code-_-MYNTRA300.jpg"
+                    alt="">
+                <!-- <ul class="list-unstyled ps-4 fs-small">
+                    <li class="fs-small">
+                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
+                            data-target="#menSubMenuMEN">
+                            <a class="icon " href="#">MEN</a> <span class="col-2">></span>
+                        </p>
+                        <ul class="list-unstyled collapse" id="menSubMenuMEN">
+                            <li><a class="icon " href="#">Submenu Item 1</a></li>
+                            <li><a class="icon " href="#">Submenu Item 2</a></li>
+                            <li><a class="icon " href="#">Submenu Item 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
+                            data-target="#menSubMenuWOMEN">
+                            <a class="icon " href="#">WOMEN</a> <span class="col-2">></span>
+                        </p>
+                        <ul class="list-unstyled collapse" id="menSubMenuWOMEN">
+                            <li><a class="icon " href="#">Submenu Item 1</a></li>
+                            <li><a class="icon " href="#">Submenu Item 2</a></li>
+                            <li><a class="icon " href="#">Submenu Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
+                            data-target="#menSubMenuKIDS">
+                            <a class="icon " href="#">KIDS</a> <span class="col-2">></span>
+                        </p>
+                        <ul class="list-unstyled collapse" id="menSubMenuKIDS">
+                            <li><a class="icon " href="#">Submenu Item 1</a></li>
+                            <li><a class="icon " href="#">Submenu Item 2</a></li>
+                            <li><a class="icon " href="#">Submenu Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
+                            data-target="#menSubMenuHOMELIVING">
+                            <a class="icon " href="#">HOME & LIVING</a> <span class="col-2">></span>
+                        </p>
+                        <ul class="list-unstyled collapse" id="menSubMenuHOMELIVING">
+                            <li><a class="icon " href="#">Submenu Item 1</a></li>
+                            <li><a class="icon " href="#">Submenu Item 2</a></li>
+                            <li><a class="icon " href="#">Submenu Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
+                            data-target="#menSubMenuBEAUTY">
+                            <a class="icon " href="#">BEAUTY</a> <span class="col-2">></span>
+                        </p>
+                        <ul class="list-unstyled collapse" id="menSubMenuBEAUTY">
+                            <li><a class="icon " href="#">Submenu Item 1</a></li>
+                            <li><a class="icon " href="#">Submenu Item 2</a></li>
+                            <li><a class="icon " href="#">Submenu Item 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="list-unstyled ps-4">
+                    <hr>
+                    <li>
+
+                    </li>
+                    <li>
+                        <a class="icon " href="#">myntra Studio
+                            <span class="border border-3 rounded-pill border-danger text-danger text-new">new</span>
+                        </a>
+
+                    </li>
+                    <li><a class="icon " href="#">Myntra Mall
+                            <span class="border border-3 rounded-pill border-danger text-danger text-new">new</span>
+                        </a>
+                    </li>
+                    <li><a class="icon " href="#">Myntra Insider</a></li>
+                    <li><a class="icon " href="#">Gift Cards</a></li>
+                    <li><a class="icon " href="#">FAQs</a></li>
+                    <li><a class="icon " href="#">Legal</a></li>
+                </ul> -->
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                    </li>
+                    <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                    </li>
+                </ul>
+                <img class="img-fluid"
+                    src="https://assets.myntassets.com/assets/images/retaillabs/2022/12/30/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA---App-Download-banner.png"
+                    alt="">
+            </nav>
+        </div>
+    </div>
+
+</nevbar>
+<!-- end:nevbar -->
+
+<!-- start:content -->
+<div class="mt-5" style="">
+    <div class="pt-5 p-4" style="">
+        <div>
+            <p>
+                <span>Home</span> /
+                <span>Clothing</span> /
+                <span class="fw-bold"> Women Ethnic Bottomwear </span>
+            </p>
+        </div>
+    </div>
+    <div class="">
+        <div class="col-12 d-flex ps-4 pe-2">
+            <div class="col-7 d-flex flex-wrap">
+                <div class="col-6 ps-5 pe-5">
+                    <div class="">
+                        <img class="img-fluid" src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-6 ps-5 pe-5">
+                    <div class="">
+                        <img class="img-fluid" src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="">
+                    <div class="">
+                        <h4 class="fw-bold">Puma</h4>
+                        <p>GRAPHICS Summer Printed Regular fit Pure Cotton T-shirt</p>
+                    </div>
+                    <div class="">
+                        <button type="button" class="btn btn-outline-primary text-center">
+                            <span class="">4.1
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </span>
+                            <span class="border-start ms-1 me-2"></span>
+                            <span class="">19 Ratings</span>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="">
+                        <span class="fw-bold">₹935</span>
+                        <span>MRP</span>
+                        <span class="text-decoration-line-through">₹ 1222</span>
+                        <span class="text-danger">(70% OFF)</span>
+                    </div>
+                    <p class="text-success">inclusive of all taxes</p>
+                    <div class="">
+                        <div class="">
+                            <p class="">
+                                <span class="fw-bold">SELECT SIZE </span>
+                                <button class="bg-transparent border-0" onclick="sizeCard_open()">
+                                    <span class="ms-4 fw-bold fs-10 text-danger">
+                                        SIZE CHART
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-outline-primary rounded-5 ps-3 pe-3">
+                            <span class="fw-bold">x</span>
+                            <br>
+                            <span class="fs-10">$12</span>
+                        </button>
+                        <button class="btn btn-outline-primary rounded-5 ps-3 pe-3">
+                            <span class="fw-bold">x</span>
+                            <br>
+                            <span class="fs-10">$12</span>
+                        </button>
+                        <button class="btn btn-outline-primary rounded-5 ps-3 pe-3">
+                            <span class="fw-bold">x</span>
+                            <br>
+                            <span class="fs-10">$12</span>
+                        </button>
+                        <button class="btn btn-outline-primary rounded-5 ps-3 pe-3">
+                            <span class="fw-bold">x</span>
+                            <br>
+                            <span class="fs-10">$12</span>
+                        </button>
+                        <button class="btn btn-outline-primary rounded-5 ps-3 pe-3">
+                            <span class="fw-bold">x</span>
+                            <br>
+                            <span class="fs-10">$12</span>
+                        </button>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <div class="col-6">
+                            <button class="btn btn-danger btn-lg col-10  align-items-center" type="button">
+                                <svg width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg>
+                                ADD TO BAG
+                            </button>
+                        </div>
+                        <div class=" col-4">
+                            <button type="button"
+                                class="btn btn-primary btn-lg col-12 bg-transparent text-black border-black">Wishlist</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="">
+                        <p>DELIVERY OPTIONS
+                            <span class="">
+                                <svg width="16" height="16" fill="currentColor" class="bi bi-box2-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6l.5.667Z" />
+                                </svg>
+                            </span>
+                        </p>
+                        <div class="">
+                            <div class="input-group mb-3 col-4">
+                                <input type="text" class="form-control" placeholder="Enter Pincode" aria-label=""
+                                    aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">Check</span>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="fs-10">Please enter PIN code to check delivery time & Pay on Delivery Availability
+                            </p>
+                        </div>
+                        <div class="fs-6">
+                            <p class="">100% Original Products</p>
+                            <p class="">Pay on delivery might be available</p>
+                            <p class="">Easy 14 days returns and exchanges</p>
+                            <p class=""></p>
+                            <p class="">Try & Buy might be available</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="fw-bold">BEST OFFERS
+                            <span class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-tag" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
+                                    <path
+                                        d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
+                                </svg>
+                            </span>
+                        </p>
+                        <div class="">
+                            <div class="fw-bold">
+                                <span class="">Best Price: </span>
+                                <span class="text-danger">Rs. 835</span>
+                            </div>
+                            <div class="">
+                                <ul class="">
+                                    <li class="">
+                                        <span class="">Coupon code: </span>
+                                        <span class="fw-bold">MYNWEB</span>
+                                    </li>
+                                    <li class="">
+                                        <p class="">Coupon Discount: Rs. 100 off (check cart for final savings)</p>
+                                    </li>
+                                    <li class="">
+                                        <p class="">Applicable on: Orders above Rs. 649 (only on first purchase)</p>
+                                    </li>
+                                </ul>
+                                <p class="text-danger">
+                                    View Eligible Products
+                                </p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <p class="fw-bold">
+                                    7.5% Instant Discount on Myntra Kotak Credit Card.
+                                </p>
+                            </div>
+                            <ul class="">
+                                <li class="">
+                                    <p class="">
+                                        Max Discount Up to ₹750 on every spends.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <p class="fw-bold">
+                                    7.5% Instant Discount on Myntra Kotak Credit Card.
+                                </p>
+                            </div>
+                            <ul class="">
+                                <li class="">
+                                    <p class="fs-10">
+                                        Max Discount Up to ₹750 on every spends.
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="text-danger">
+                                Terms & Condition
+                            </p>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <p class="fw-bold">
+                                    UpTo ₹500 Cashback on CRED pay UPI transactions.
+                                </p>
+                            </div>
+                            <ul class="">
+                                <li class="">
+                                    <p class="fs-10">
+                                        Min Spend ₹1,000. Available only on Android Devices.
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="text-danger">
+                                Terms & Condition
+                            </p>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <p class="fs-10">
+                                    EMI option available
+                                </p>
+                            </div>
+                            <ul class="">
+                                <li class="">
+                                    <p class="fs-10">
+                                        EMI starting from Rs.42/month
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="text-danger">
+                                View Plan
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="">
+                        <div class="">
+                            <p class="fw-bold">
+                                <span class="">
+                                    PRODUCT DETAILS
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                    <path
+                                        d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </p>
+                            <div class="">
+                                <p class="text-wrap fs-10">
+                                    <span class="fw-bold">PRODUCT STORY :</span>
+                                    <span class="">
+                                        Summer vibes take the centre stage in this distinctive, graphic tee. The
+                                        deconstructed take on the PUMA Wordmark is the perfect print to front it.
+                                        FEATURES & BENEFITS : Cotton: Cotton in PUMA products comes from farms with a
+                                        focus on sustainable farming such as water efficiency and soil health
+                                        protection. Learn more: https://about.puma.com/forever-better
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="fw-bold">Details</p>
+                        <p class="m-0">Blue T-shirt for men</p>
+                        <p class="m-0">Graphic printed</p>
+                        <p class="m-0">Regular length</p>
+                        <p class="m-0">Round neck</p>
+                        <p class="m-0">Regular fit</p>
+                        <p class="m-0">Short, regular sleeves</p>
+                        <p class="m-0">Knitted pure cotton fabric</p>
+                    </div>
+                    <div class="">
+                        <p class="fw-bold">Size & Fit</p>
+                        <p class="m-0">Regular Fit</p>
+                        <p class="m-0">The model (height 6') is wearing a size M</p>
+                    </div>
+                    <div class="">
+                        <p class="fw-bold">Material & Care</p>
+                        <p class="m-0">100% Cotton</p>
+                        <p class="m-0">Machine-wash</p>
+                        <p class="m-0">Close All Fastenings; Use Only Mild Detergent; Wash with similar color</p>
+                    </div>
+                    <div class=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="">
+                <div class="ms-4">
+                    <p class="fw-bold">SIMILAR PRODUCTS</p>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 border border-1">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 mb-1">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="d-flex justify-content-center">
+                    <div class="col-5 d-flex justify-content-between">
+                        <button class="btn btn-primary rounded-5 bg-transparent text-danger border-danger"
+                            type="submit">More T-Shirts By Puma</button>
+                        <button class="btn btn-primary rounded-5 bg-transparent text-danger border-danger"
+                            type="submit">More Blue T-Shirts</button>
+                        <button class="btn btn-primary rounded-5 bg-transparent text-danger border-danger"
+                            type="submit">More T-Shirts</button>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="ms-4">
+                    <p class="fw-bold">CUSTOMERS ALSO LIKED</p>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 border border-1">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 mb-1">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-3 mb-5">
+                        <div class="mainDiv">
+                            <div class="border">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="mt-1 ">
+                                    <p class="btn fw-bold m-0">Roadster</p>
+                                    <p class="fs-10 m-0 ps-3">pure cotton t-shirt</p>
+                                    <div class="fs-10 ps-3">
+                                        <span class="fw-bold">Rs. 250</span>
+                                        <span class="text-decoration-line-through">499</span>
+                                        <span class="text-danger">(40% off)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="position-fixed col-12 " style=" top: 0px;z-index: 99999; display: none;" id="mySidebar">
+    <div class="position-absolute w-100" style="right: 0;">
+        <div class="d-flex w-100">
+            <div class="col-6 " style="background-color: black;opacity: 50%;"></div>
+
+            <div class="col-6 bg-white"  style="height: 800px;overflow:auto;">
+                <div class="mb-5">
+                    <button class="w3-bar-item w3-button w3-hide-large" onclick="sizeCard_close()"> &times;</button>
+                </div>
+                <div class="bg-white">
+                    <div class="col-12 d-flex">
+                        <!-- <div class="col-2"></div> -->
+                        <div class="col-2 ms-5 ">
+                            <div class="">
+                                <div class="">
+                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                        class="img-fluid" alt="...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-8 ms-5">
+                            <div class="">
+                                <div class="">
+                                    <p class="">Puma</p>
+                                    <p class="">Puma GRAPHICS Summer Printed Regular fit Pure Cotton T-shirt</p>
+                                    <p class="">
+                                        <span class="fw-bold">₹935</span>
+                                        <span>MRP</span>
+                                        <span class="text-decoration-line-through">₹1222</span>
+                                        <span class="text-danger">(70% OFF)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5 border border-1 border-secondary-emphasis  ">
+                        <div class="d-flex ">
+                            <div class="col-6 border-bottom border-3 border-danger">
+                                <button
+                                    class="btn btn-primary col-12 bg-transparent border-0 text-danger rounded-0 fw-bold"
+                                    type="button">Size Chart</button>
+                            </div>
+                            <div class="col-6  ">
+                                <button
+                                    class="btn btn-primary col-12 bg-transparent border-0 text-black rounded-0"
+                                    type="button">How to measure</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4 mt-4">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-primary" type="button">Button</button>
+                        </div>
+                    </div>
+                    <div class="col-12 border-top bg-white">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Chest (cm)</th>
+                                    <th scope="col">Front Length (cm)</th>
+                                    <th scope="col">Across Shoulder (cm)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <th scope="row">
+                                        <input type="radio" name="btnradio" id="btnradio1" autocomplete="off">
+                                    </th>
+                                    <td>XS </td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="radio" name="btnradio" id="btnradio1" autocomplete="off">
+                                    </th>
+                                    <td>S</td>
+                                    <td>99.1</td>
+                                    <td>70.9</td>
+                                    <td>70.9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="radio" name="btnradio" id="btnradio1" autocomplete="off">
+                                    </th>
+                                    <td>M</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="radio" name="btnradio" id="btnradio1" autocomplete="off">
+                                    </th>
+                                    <td>L</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="radio" name="btnradio" id="btnradio1" autocomplete="off">
+                                    </th>
+                                    <td>XL</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="radio" name="btnradio" id="btnradio1" autocomplete="off">
+                                    </th>
+                                    <td>XXL</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                    <td>99.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 bg-white">
+                        <div class="border-top border-bottom border-5 border-secondary fw-bold ps-2">
+                            <p class="m-0 mt-2">
+                                <span class="">Seller:</span>
+                                <span class="text-danger">Puma Sports India Pvt. Ltd.(NSCM)</span>
+                            </p>
+                            <p class="m-0 mb-2">
+                                <span class="text-danger">1 more seller available</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white">
+                        <div class="text-center mb-4 mt-2">
+                            <p class="fs-10">* Garment Measurements in Cms</p>
+                        </div>
+                        <div class="ps-2">
+                            <p class="fw-bold">How to measure yourself</p>
+                        </div>
+                        <div class="text-center">
+                            <img class="img-fluid" src="../img/11481690842463-Tshirts_men.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 bg-white bottom-0 " style="position: sticky; height: 70px;">
+                        <div class="col-12 d-flex justify-content-around">
+                            <div class="col-6 pe-2">
+                                <button class="btn btn-danger btn-lg col-12  align-items-center" type="button">
+                                    <svg width="16" height="16" fill="currentColor" class="bi bi-bag"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                    ADD TO BAG
+                                </button>
+                            </div>
+                            <div class=" col-6 ps-2">
+                                <button type="button"
+                                    class="btn btn-primary btn-lg col-12 bg-white text-black border-black">Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end:content -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+
+<!-- start:footer -->
+<footer class="d-flex  row fs-small  p-5" style="background-color: rgb(250, 251, 252);">
+    <div class="media-999-block  text-secondary m-5">
+        <div class="d-flex">
+            <ul class="col-12">
+                <p class="fw-bold">SHOP FOR</p>
+    
+                <p class="lh-sm"><span>Men</span> |
+                    <span>Women</span> |
+                    <span>Kids</span> |
+                    <span>Home & Living</span> |
+                    <span>Beauty</span> |
+                    <span>Gift Cards</span> |
+                    <span>Myntra Insider</span>
+                </p>
+    
+                <p class="mt-4 fw-bold">KEEP IN TOUCH</p>
+                <div class="d-flex">
+                    <div class="ms-0">
+                        <img width="25px" src="../img/abc/facebook-logo.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="ms-2">
+                        <img width="25px" src="../img/abc/insta.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="ms-2">
+                        <img width="25px" src="../img/abc/twitter-logo.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="ms-2">
+                        <img width="25px" src="../img/abc/yt.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="">
+                    <p class="fw-bold">CUSTOMER POLICIES</p>
+    
+                    <p> 
+                        <span>Contact Us</span>
+                        <span>FAQ</span>
+                        <span>T&C</span>
+                        <span>Terms Of Use</span>
+                        <span>Track Orders</span>
+                        <span>Shipping</span>
+                        <span>Cancellation</span>
+                        <span>Returns</span>
+                        <span>Privacy policy</span>
+                        <span>Grievance Officer</span>
+                    </p>
+                </div>
+    
+                <p class="fw-bold">USEFUL LINKS</p>
+    
+                <span>Blog</span>
+                <span>Careers</span>
+                <span>Site Map</span>
+                <span>Corporate Information</span>
+                <span>Whitehat</span>
+            </ul>
+            
+            
+    
+        </div>
+    </div>
+    <div class="media-999-none col-12 text-secondary m-5 mt-0 mb-0 p-5 pt-0 mb-0">
+        <div class="d-flex p-5 pt-0 pb-0">
+            <ul class="col-2 list-unstyled lh-lg">
+                <p class="fw-bold">ONLINE SHOPPING</p>
+    
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+                <li>Home & Living</li>
+                <li>Beauty</li>
+                <li>Gift Cards</li>
+                <li>Myntra Insider</li>
+    
+                <p class="fw-bold">USEFUL LINKS</p>
+    
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Site Map</li>
+                <li>Corporate Information</li>
+                <li>Whitehat</li>
+            </ul>
+            <ul class="col-2 list-unstyled lh-lg">
+                <p class="fw-bold">CUSTOMER POLICIES</p>
+    
+                <li>Contact Us</li>
+                <li>FAQ</li>
+                <li>T&C</li>
+                <li>Terms Of Use</li>
+                <li>Track Orders</li>
+                <li>Shipping</li>
+                <li>Cancellation</li>
+                <li>Returns</li>
+                <li>Privacy policy</li>
+                <li>Grievance Officer</li>
+            </ul>
+            <ul class="col-3">
+                <p class="fw-bold">EXPERIENCE MYNTRA APP ON MOBILE</p>
+                <div class="d-flex justify-content-around">
+                    <div class="col-5">
+                        <img src="../img/abc/google_play.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-5">
+                        <img src="../img/abc/google_play.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <p class="mt-4 fw-bold">KEEP IN TOUCH</p>
+                <div class="d-flex">
+                    <div class="col-2">
+                        <img width="25px" src="../img/abc/facebook-logo.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-2">
+                        <img width="25px" src="../img/abc/insta.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-2">
+                        <img width="25px" src="../img/abc/twitter-logo.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-2">
+                        <img width="25px" src="../img/abc/yt.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </ul>
+            <ul class="col-3">
+                <div class="d-flex">
+                    <div class="col-2">
+                        <img src="../img/abc/original.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-10">
+                        <p>
+                            <span class="fw-bold">100% ORIGINAL</span>
+                            guarantee for all products at myntra.com
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-2">
+                        <img src="../img/abc/Return-Window-image.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-10">
+                        <p>
+                            <span class="fw-bold">Return within 14days</span>
+                            of receiving your order
+                        </p>
+                    </div>
+                </div>
+            </ul>
+    
+        </div>
+    </div>
+    <div class="m-5 mt-0 mb-0 p-5 pt-0 mb-0">
+        <div class="col-12  p-5 pt-0 pb-0">
+            <p class="fw-bold"> POPULAR SEARCHES
+                <hr>
+            </p>
+        </div>
+        <div class="col-12  p-5 pt-0 pb-0">
+                <div class="desktop-pSearchlinks text-secondary lh-lg fs-6 text" data-reactid="127">
+                    <a class="text-secondary text-decoration-none" href="/makeup" data-reactid="129">
+                    Makeup</a> | 
+                    <a class="text-secondary text-decoration-none" href="/girls-dresses" data-reactid="133">
+                    Dresses ForGirls</a> | 
+                    <a class="text-secondary text-decoration-none" href="/tshirts"
+                    data-reactid="137">
+                    T-Shirts</a> | 
+                    <a class="text-secondary text-decoration-none" href="/sandals" data-reactid="141">
+                    Sandals</a> | 
+                    <a class="text-secondary text-decoration-none" href="/headphones" data-reactid="145">
+                    Headphones</a> | 
+                    <a class="text-secondary text-decoration-none" href="/babydolls" data-reactid="149">
+                    Babydolls</a> | 
+                    <a class="text-secondary text-decoration-none" href="/men-blazers" data-reactid="153">
+                    Blazers ForMen</a> | 
+                    <a class="text-secondary text-decoration-none" href="/handbags"
+                    data-reactid="157">
+                    Handbags</a> | 
+                    <a class="text-secondary text-decoration-none" href="/women-watches" data-reactid="161">
+                    LadiesWatches</a> | 
+                    <a class="text-secondary text-decoration-none" href="/bags"
+                    data-reactid="165">
+                    Bags</a> | 
+                    <a class="text-secondary text-decoration-none" href="/sports-shoes" data-reactid="169">
+                    Sport Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/reebok-shoes" data-reactid="173">
+                    Reebok Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/puma-shoes" data-reactid="177">
+                    Puma Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/men-boxers" data-reactid="181">
+                    Boxers</a> | 
+                    <a class="text-secondary text-decoration-none" href="/wallets" data-reactid="185">
+                    Wallets</a> | 
+                    <a class="text-secondary text-decoration-none" href="/women-shirts-tops-tees"
+                    data-reactid="189">
+                    Tops</a> | 
+                    <a class="text-secondary text-decoration-none" href="/earrings" data-reactid="193">
+                    Earrings</a> | 
+                    <a class="text-secondary text-decoration-none" href="/fastrack-watches" data-reactid="197">
+                    Fastrack
+                    Watches</a><a
+                    href="/women-kurtas-kurtis-suits" data-reactid="201">
+                    Kurtis</a> | 
+                    <a class="text-secondary text-decoration-none" href="/nike" data-reactid="205">
+                    Nike</a> | 
+                    <a class="text-secondary text-decoration-none" href="/smart-watches" data-reactid="209">
+                    SmartWatches</a> | 
+                    <a class="text-secondary text-decoration-none" href="/titan-watches"
+                    data-reactid="213">TitanWatches</a> | 
+                    <a class="text-secondary text-decoration-none" href="/saree-blouse"
+                    data-reactid="217">DesignerBlouse</a> | 
+                    <a class="text-secondary text-decoration-none" href="/gown"
+                    data-reactid="221">
+                    Gowns</a> | 
+                    <a class="text-secondary text-decoration-none" href="/rings" data-reactid="225">
+                    Rings</a> | 
+                    <a class="text-secondary text-decoration-none" href="/cricket-shoes" data-reactid="229">
+                    CricketShoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/forever-21"
+                    data-reactid="233">Forever21</a> | 
+                    <a class="text-secondary text-decoration-none" href="/eye-makeup"
+                    data-reactid="237">EyeMakeup</a> | 
+                    <a class="text-secondary text-decoration-none" href="/photo-frames"
+                    data-reactid="241">PhotoFrames</a> | 
+                    <a class="text-secondary text-decoration-none" href="/punjabi-suits"
+                    data-reactid="245">PunjabiSuits</a> | 
+                    <a class="text-secondary text-decoration-none" href="/bikini"
+                    data-reactid="249">
+                    Bikini</a> | 
+                    <a class="text-secondary text-decoration-none" href="/shop/myntra-fashion-superstar"
+                    data-reactid="253">MyntraFashion Show</a> | 
+                    <a class="text-secondary text-decoration-none" href="/lipstick"
+                    data-reactid="257">
+                    Lipstick</a> | 
+                    <a class="text-secondary text-decoration-none" href="/saree" data-reactid="261">
+                    Saree</a> | 
+                    <a class="text-secondary text-decoration-none" href="/watches" data-reactid="265">
+                    Watches</a> | 
+                    <a class="text-secondary text-decoration-none" href="/dresses" data-reactid="269">
+                    Dresses</a> | 
+                    <a class="text-secondary text-decoration-none" href="/lehengas" data-reactid="273">
+                    Lehenga</a> | 
+                    <a class="text-secondary text-decoration-none" href="/nike-shoes" data-reactid="277">
+                    Nike Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/goggles" data-reactid="281">
+                    Goggles</a> | 
+                    <a class="text-secondary text-decoration-none" href="/bra" data-reactid="285">
+                    Bras</a> | 
+                    <a class="text-secondary text-decoration-none" href="/men-suits" data-reactid="289">
+                    Suit</a> | 
+                    <a class="text-secondary text-decoration-none" href="/chinos" data-reactid="293">
+                    Chinos</a> | 
+                    <a class="text-secondary text-decoration-none" href="/shoes" data-reactid="297">
+                    Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/adidas-shoes" data-reactid="301">
+                    Adidas Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/woodland-shoes" data-reactid="305">
+                    Woodland Shoes</a> | 
+                    <a class="text-secondary text-decoration-none" href="/jewellery"data-reactid="309">Jewellery</a> | 
+                    <a class="text-secondary text-decoration-none" href="/designer-saree" data-reactid="313">Designers Sarees</a>
+                </div>  
+                <div class="d-flex justify-content-between mt-5">
+                    <p>In case of any concern, Contact Us</p>
+                    <p>© 2023 www.myntra.com. All rights reserved.</p>
+                </div>
+        </div>
+    </div>
+</footer>
+<!-- end:footer  -->
+
+</html>
+
+
+<script>
+
+    var header = document.getElementById('body');
+    var click = document.querySelectorAll('div button');
+    var menu = document.querySelector('#st-container');
+    var pusher = document.querySelector('st-pusher');
+    // to store the corresponding effect
+    var effect;
+
+    // adding a click event to all the buttons
+    for (var i = 0; i < click.length; i++) {
+        click[i].addEventListener('click', addClass)
+    }
+
+    pusher.addEventListener('click', closeMenu);
+
+
+
+    function addClass(e) {
+        // to get the correct effect
+        effect = e.target.getAttribute('data-effect');
+        // adding the effects
+        menu.classList.toggle(effect);
+        menu.classList.toggle('st-menu-open');
+        header.classList.toggle('text-opacity-25');
+
+        // console.log(e.target.getAttribute('data-effect'));
+    }
+    // menu.classList.toggle('st-menu-open');
+
+    function closeMenu(el) {
+        // if the click target has this class then we close the menu by removing all the classes
+        if (el.target.classList.contains('st-pusher')) {
+            menu.classList.toggle(effect);
+            menu.classList.toggle('st-menu-open');
+            // console.log(el.target);
+        }
+    }
+
+</script>
+<script>
+    function sizeCard_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function sizeCard_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $('.dropdown').hover(function () {
+            $(this).addClass('show');
+            $(this).find('.dropdown-menu').addClass('show');
+        }, function () {
+            $(this).removeClass('show');
+            $(this).find('.dropdown-menu').removeClass('show');
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+<script>
+    function sizeCard_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function sizeCard_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>

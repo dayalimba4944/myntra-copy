@@ -1,0 +1,384 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+/* .accent-danger{
+    accent-color: #dc3545;
+} */
+.fs-small{
+	font-size: small
+}
+.border-dashed{
+    border-style: dashed;
+}
+
+input[type="checkbox"]{
+    accent-color: #dc3545;
+}
+.white-space-nowrap{
+    white-space: nowrap;
+}
+.fs-10{
+    font-size: 14px;
+}
+
+
+
+
+/* ////////////////////////////// */
+.swiper-pagination-clickable{
+    display: none;
+}
+.text-opacity-25{
+    background-color: #000000;
+}
+.logo_image_prop{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.bottom_shadow{
+    box-shadow: 0px -1px 9px -3px #000000;
+    border-right: 0px;
+}
+
+
+
+
+.desktop-nav-search-input-box-in{
+    width: 77% !important;
+    margin-left: 27%;
+}
+
+.desktop-nav-dropdown{
+    color: #000000;
+    background-color: #fff;
+}
+.text-new{
+    font-size: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nav--visible.nav:after {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.desktop-nav-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem!important;
+    padding-right: 0.5rem!important;
+}
+
+/* 
+input:focus {
+    background-color: #fff !important;
+    border-color: #eaeaec !important;
+} */
+
+.nav-item-dropdown+.dropdown-item-card {
+	display: none;
+	/* display: block; */
+	position: absolute;
+	top: 66px;
+	left: 142px;
+	z-index: 0;
+  }
+  .nav-item-dropdown:hover+.dropdown-item-card ,.dropdown-item-card:hover {
+	display: block;
+	z-index: 99;
+  }
+  .nav-item-dropdown:hover+.dropdown-item-card  {
+	display: block;
+	z-index: 99;
+  }
+  .nav-item-dropdown:hover{ 
+	box-sizing: border-box;
+	border-bottom: 4px solid ;
+	padding-bottom: 20px !important;
+  }
+  .nav-item-dropdown:hover + body{ 
+	background-color: red !important;
+  }
+.nav-profile-dropdown+.dropdown-profile-list  {
+	display: none;
+	position: absolute;
+	top: 66px;
+	left: 1250px;
+	z-index: 0;
+  }
+
+  .nav-profile-dropdown:hover+.dropdown-profile-list ,.dropdown-profile-list:hover {
+	display: block;
+	z-index: 99;
+  }
+  .nav-profile-dropdown:hover+.dropdown-profile-list  {
+	display: block;
+	z-index: 99;
+  }
+  /* .nav-item-dropdown{
+	border-bottom: 4px solid white !important;	
+  } */
+  .nav-profile-dropdown:hover{ 
+	box-sizing: border-box;
+	border-bottom: 4px solid ;
+  }
+.dropdown-item-list{
+	height: 500px !important;
+	width: 1200px !important;
+	padding-top: 20px;
+	overflow: hidden;
+}  
+.dropdown-item:hover{
+	color: #282c3f;
+	font-weight: 600;
+  }
+
+
+  
+@media screen and (max-width: 1300px) {
+    .desktop-nav-search-input-box{
+        margin-left: 25px !important;
+    }
+	.dropdown-item-list{
+		height: 500px !important;
+		width: 1000px !important;
+		padding-top: 20px;
+		overflow: hidden;
+	}  
+}
+@media screen and (max-width: 1200px) {
+    .fs-10{
+        font-size: 10px !important;
+    }
+    .logo_image_prop{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    .desktop-nav{
+        font-size: 14px !important;
+    }
+    .desktop-nav-right{
+        font-size: 12px;
+
+    }
+    .desktop-nav-search-input-box{
+        margin-left: 0px !important;
+    }
+    .desktop-nav-search-input-box{
+        width: 30% !important;
+    }
+	.dropdown-item-list{
+		height: 500px !important;
+		width: 1000px !important;
+		padding-top: 20px;
+		overflow: hidden;
+	}  
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .desktop-nav-search-input-box{
+        margin-left: 15px !important;
+    }
+    .fs-10{
+        font-size: 10px !important;
+    }
+    .logo_image_prop{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    .desktop-nav{
+        font-size: 12px !important;
+    }
+    .desktop-nav-right{
+        font-size: 10px;
+        padding-right: 1rem !important;
+        padding-left: 0.5rem !important;
+    }
+	.dropdown-item-list{
+		height: 500px !important;
+		width: 800px !important;
+		padding-top: 20px;
+		overflow: hidden;
+	}  
+}
+
+@media screen and (max-width: 1000px) {
+    .fs-10{
+        font-size: 10px !important;
+    }
+    .logo_image_prop{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+    .desktop-nav{
+        font-size: 12px !important;
+    }
+    .desktop-nav-right{
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .desktop-nav-dropdown{
+        display: block !important;
+    }
+    .desktop-nav-hide{
+        display: none !important;
+    }
+    .desktop-nav-unhide{
+        display: block !important;
+    }
+
+    .desktop-nav-right{
+        font-size: 20px;
+
+    }
+    .desktop-nav-width{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .logo_image_prop{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+    .desktop-nav{
+        font-size: 12px !important;
+    }
+    .desktop-nav-right{
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+    .desktop-nav-search-input {
+        width: 20% !important;
+    }
+    /* .input-group-text{
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    } */
+    .desktop-nav-dropdown{
+        display: block !important;
+        color: #000000;
+        background-color: #fff;
+    }
+    .desktop-nav-hide{
+        display: none !important;
+    }
+    .desktop-nav-width{
+        width: 20% !important;
+    }
+	.Shop-By-Category{
+		overflow-x: scroll;
+	}
+}
+
+
+.content {
+	z-index: -19;
+}
+
+
+
+
+
+
+
+
+/* /////////////////////////////// */
+
+
+/* The sidepanel menu */
+.sidepanel {
+	min-height: 750px; /* Specify a height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: absolute;
+	z-index: 3; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #ffffff; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 70px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+	padding: 0px 0px 0px 0px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	padding: 10px 15px;
+	border: none;
+  }
+  
+  .openbtn:hover {
+	background-color: #444;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* //! footer */
+.media-999-none{
+    display: block;
+}
+.media-999-block{
+    display: none;
+}
+@media screen and (max-width: 999px) {
+.media-999-none{
+    display: none;
+}
+.media-999-block{
+    display: block;
+}
+}
+
