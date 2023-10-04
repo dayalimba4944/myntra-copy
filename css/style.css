@@ -22,10 +22,24 @@ input[type="checkbox"]{
 .fs-10{
     font-size: 14px;
 }
-
-
-
-
+/* start:hover  */
+.hover-none:hover{
+    display: none;
+}
+.hover-block:hover{
+    display: block;
+}
+.hover-shadow:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.hover-border-danger:hover{
+    border-color: #dc3545 !important;
+}
+.hover-border-danger:focus + .focus-text-danger{
+    color: #dc3545 !important;
+}
+.hover-border-danger + .digitinput-label
+/* end:hover  */
 /* ////////////////////////////// */
 .swiper-pagination-clickable{
     display: none;
@@ -382,3 +396,98 @@ input:focus {
 }
 }
 
+
+
+
+
+/* !  */
+
+
+    /* CSS rules are kept repetitive so that you can get CSS rules for each button easily :) */
+
+
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  /* overflow: hidden; */
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  /* border-radius: 2px; */
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  border: 1px solid rgb(164, 164, 164);
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* */
+#button-1 .knobs:before {
+  content: "cm";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 4px 4px 4px 2px;
+  background-color: black;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .checkbox:checked + .knobs:before {
+  content: "in";
+  left: 42px;
+  padding: 4px 4px 4px 4px;
+  background-color: black;
+}
+
+#button-1 .checkbox:checked ~ .layer {
+  /* background-color: #fcebeb; */
+}
+
+#button-1 .knobs,
+#button-1 .knobs:before,
+#button-1 .layer {
+  transition: 0.3s ease all;
+}
