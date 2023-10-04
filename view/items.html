@@ -81,7 +81,7 @@
                         <div class="col-10  d-none d-lg-block ml-3">
                             <ul class="d-flex align-items-center justify-content-start list-unstyled mb-0 ">
                                 <li class="px-md-3  fw-bold fs-small py-4 nav-item-dropdown border-danger">
-                                    <a href="../view/home.html"
+                                    <a href="../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">MEN</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row ">
@@ -215,7 +215,7 @@
                                     </ul>
                                 </div>
                                 <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-warning">
-                                    <a href="../view/home.html"
+                                    <a href="../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">WOMEN</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row">
@@ -349,7 +349,7 @@
                                     </ul>
                                 </div>
                                 <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-primary">
-                                    <a href="../view/home.html"
+                                    <a href="../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">KIDS</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row">
@@ -840,7 +840,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../view/my/" class="dropdown-item text-decoration-none text-black">
+                                                        <a href="../view/forms/giftcard.html" class="dropdown-item text-decoration-none text-black">
                                                             Gift Cards
                                                         </a>
                                                     </li>
@@ -850,7 +850,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../view/my/" class="dropdown-item text-decoration-none text-black">
+                                                        <a href="../view/my/myntrainsider.html" class="dropdown-item text-decoration-none text-black">
                                                             Myntra InsiderNew
                                                         </a>
                                                     </li>
@@ -1048,7 +1048,9 @@
         </div>
         <div class="col-7 ps-4">
             <ul class="d-flex justify-content-between list-unstyled">
-                <li>Add-Ons
+                <li>
+                    <input type="radio" name="fruit" value="Add-Ons" id="orange">
+                    Add-Ons
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
                             class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
@@ -1057,7 +1059,9 @@
                         </svg>
                     </span>
                 </li>
-                <li>Bundles
+                <li>
+                    <input type="radio" name="fruit" value="Bundles" id="orange">
+                    Bundles
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
                             class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
@@ -1066,7 +1070,8 @@
                         </svg>
                     </span>
                 </li>
-                <li>collar
+                <li><input type="radio" name="fruit" value="collar" id="orange">
+                    collar
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
                             class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
@@ -1081,6 +1086,20 @@
                 <li data-bs-toggle="dropdown" aria-expanded="false">fit</li>
                 <li data-bs-toggle="dropdown" aria-expanded="false">+17 more</li>
             </ul>
+            <!-- <form>
+                <div>
+                    
+                    <label for="orange">Orange</label>
+                </div>
+                <div>
+                    <input type="radio" name="fruit" value="apple" id="apple">
+                    <label for="apple">Apple</label>
+                </div>
+                <div>
+                    <input type="radio" name="fruit" value="banana" id="banana">
+                    <label for="banana">Banana</label>
+                </div>
+            </form> -->
         </div>
         <div class="col-3 d-flex justify-content-end pe-5 ">
             <div class="dropdown ">
@@ -1232,15 +1251,19 @@
             </div>
         </div>
         <div class="col-lg-10 col-12 border-top ">
+            <div class="">
+                <div id="log"></div>
+            </div>
             <div class="border-bottom">
                 <div class="d-flex flex-wrap  row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 m-2 	">
-                    <div class="col p-3 pb-5">
-                        <div class="mainDiv">
-                            <div class="card-f-img check1">
+                    <div class="col p-3 pb-5 hover-shadow">
+                        <!-- <a href="../view/select-items.html" class="text-decoration-none text-black "> -->
+                            <div class="mainDiv">
                                 <div class="">
-                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                        class="img-fluid" alt="...">
-                                </div>
+                                    <div class="card-f-img check1">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                            
                                 <div class="mt-1 d-flex justify-content-between">
                                     <div class="">
                                         <p class="btn fw-bold m-0">Roadster</p>
@@ -1251,7 +1274,7 @@
                                             <span class="text-danger">(40% off)</span>
                                         </div>
                                     </div>
-                                    <div class="m-3">
+                                    <div class="m-3 d-lg-none">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                                 <path
@@ -1259,78 +1282,78 @@
                                             </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-none d-md-block">
-                                <a href="#" class="text-decoration-none text-black">
-                                <div class="card-s-img check2  ">
-                                    <div class="">
-                                        <div class="position-relative" style=""> 
-                                            
-                                        <button type="button" style="" class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" onclick="sizeCard_open()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-                                              </svg>
+                                    </div>
+                                    <div class="card-s-img check2  " >
+                                        <div class="">
+                                            <div class="position-relative" style=""> 
+                                                <button class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SIMILARPRODUCTS" aria-controls="SIMILARPRODUCTS">                                            
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                                    </svg>
+                                                </button>
+    
+                                                <swiper-container onclick="demo()" class="mySwiper col-12 " pagination="true"
+                                                    pagination-clickable="true" navigation="false" space-between="30"
+                                                    centered-slides="true" autoplay-delay="2500"
+                                                    autoplay-disable-on-interaction="false">
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                </swiper-container>
+                                            </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Wishlist
                                             </button>
-                                            <swiper-container class="mySwiper col-12 " pagination="true"
-                                                pagination-clickable="true" navigation="false" space-between="30"
-                                                centered-slides="true" autoplay-delay="2500"
-                                                autoplay-disable-on-interaction="false">
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                            </swiper-container>
-                                        </div>
-                                    </div>
-                                    <div class="mt-1">
-                                        <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                            </svg>
-                                            Wishlist
-                                        </button>
-                                        <p class="fs-10 m-0">Sizes: S</p>
-                                        <div class="fs-10">
-                                            <span class="fw-bold">Rs. 250</span>
-                                            <span class="text-decoration-line-through">499</span>
-                                            <span class="text-danger">(40% off)</span>
+                                            <p class="fs-10 m-0">Sizes: S</p>
+                                            <div class="fs-10">
+                                                <span class="fw-bold">Rs. 250</span>
+                                                <span class="text-decoration-line-through">499</span>
+                                                <span class="text-danger">(40% off)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                        </div>
+                        <!-- </a> -->
+                        
                     </div>
-                    <div class="col p-3 pb-5">
-                        <div class="mainDiv">
-                            <div class="card-f-img check1">
+                    <div class="col p-3 pb-5 hover-shadow">
+                        <!-- <a href="../view/select-items.html" class="text-decoration-none text-black "> -->
+                            <div class="mainDiv">
                                 <div class="">
-                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                        class="img-fluid" alt="...">
-                                </div>
+                                    <div class="card-f-img check1">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                            
                                 <div class="mt-1 d-flex justify-content-between">
                                     <div class="">
                                         <p class="btn fw-bold m-0">Roadster</p>
@@ -1341,7 +1364,7 @@
                                             <span class="text-danger">(40% off)</span>
                                         </div>
                                     </div>
-                                    <div class="m-3">
+                                    <div class="m-3 d-lg-none">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                                 <path
@@ -1349,78 +1372,78 @@
                                             </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-none d-md-block">
-                                <a href="#" class="text-decoration-none text-black">
-                                <div class="card-s-img check2  ">
-                                    <div class="">
-                                        <div class="position-relative" style=""> 
-                                            
-                                        <button type="button" style="" class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" onclick="sizeCard_open()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-                                              </svg>
+                                    </div>
+                                    <div class="card-s-img check2  " >
+                                        <div class="">
+                                            <div class="position-relative" style=""> 
+                                                <button class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SIMILARPRODUCTS" aria-controls="SIMILARPRODUCTS">                                            
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                                    </svg>
+                                                </button>
+    
+                                                <swiper-container onclick="demo()" class="mySwiper col-12 " pagination="true"
+                                                    pagination-clickable="true" navigation="false" space-between="30"
+                                                    centered-slides="true" autoplay-delay="2500"
+                                                    autoplay-disable-on-interaction="false">
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                </swiper-container>
+                                            </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Wishlist
                                             </button>
-                                            <swiper-container class="mySwiper col-12 " pagination="true"
-                                                pagination-clickable="true" navigation="false" space-between="30"
-                                                centered-slides="true" autoplay-delay="2500"
-                                                autoplay-disable-on-interaction="false">
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                            </swiper-container>
-                                        </div>
-                                    </div>
-                                    <div class="mt-1">
-                                        <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                            </svg>
-                                            Wishlist
-                                        </button>
-                                        <p class="fs-10 m-0">Sizes: S</p>
-                                        <div class="fs-10">
-                                            <span class="fw-bold">Rs. 250</span>
-                                            <span class="text-decoration-line-through">499</span>
-                                            <span class="text-danger">(40% off)</span>
+                                            <p class="fs-10 m-0">Sizes: S</p>
+                                            <div class="fs-10">
+                                                <span class="fw-bold">Rs. 250</span>
+                                                <span class="text-decoration-line-through">499</span>
+                                                <span class="text-danger">(40% off)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                        </div>
+                        <!-- </a> -->
+                        
                     </div>
-                    <div class="col p-3 pb-5">
-                        <div class="mainDiv">
-                            <div class="card-f-img check1">
+                    <div class="col p-3 pb-5 hover-shadow">
+                        <!-- <a href="../view/select-items.html" class="text-decoration-none text-black "> -->
+                            <div class="mainDiv">
                                 <div class="">
-                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                        class="img-fluid" alt="...">
-                                </div>
+                                    <div class="card-f-img check1">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                            
                                 <div class="mt-1 d-flex justify-content-between">
                                     <div class="">
                                         <p class="btn fw-bold m-0">Roadster</p>
@@ -1431,7 +1454,7 @@
                                             <span class="text-danger">(40% off)</span>
                                         </div>
                                     </div>
-                                    <div class="m-3">
+                                    <div class="m-3 d-lg-none">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                                 <path
@@ -1439,78 +1462,78 @@
                                             </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-none d-md-block">
-                                <a href="#" class="text-decoration-none text-black">
-                                <div class="card-s-img check2  ">
-                                    <div class="">
-                                        <div class="position-relative" style=""> 
-                                            
-                                        <button type="button" style="" class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" onclick="sizeCard_open()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-                                              </svg>
+                                    </div>
+                                    <div class="card-s-img check2  " >
+                                        <div class="">
+                                            <div class="position-relative" style=""> 
+                                                <button class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SIMILARPRODUCTS" aria-controls="SIMILARPRODUCTS">                                            
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                                    </svg>
+                                                </button>
+    
+                                                <swiper-container onclick="demo()" class="mySwiper col-12 " pagination="true"
+                                                    pagination-clickable="true" navigation="false" space-between="30"
+                                                    centered-slides="true" autoplay-delay="2500"
+                                                    autoplay-disable-on-interaction="false">
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                </swiper-container>
+                                            </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Wishlist
                                             </button>
-                                            <swiper-container class="mySwiper col-12 " pagination="true"
-                                                pagination-clickable="true" navigation="false" space-between="30"
-                                                centered-slides="true" autoplay-delay="2500"
-                                                autoplay-disable-on-interaction="false">
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                            </swiper-container>
-                                        </div>
-                                    </div>
-                                    <div class="mt-1">
-                                        <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                            </svg>
-                                            Wishlist
-                                        </button>
-                                        <p class="fs-10 m-0">Sizes: S</p>
-                                        <div class="fs-10">
-                                            <span class="fw-bold">Rs. 250</span>
-                                            <span class="text-decoration-line-through">499</span>
-                                            <span class="text-danger">(40% off)</span>
+                                            <p class="fs-10 m-0">Sizes: S</p>
+                                            <div class="fs-10">
+                                                <span class="fw-bold">Rs. 250</span>
+                                                <span class="text-decoration-line-through">499</span>
+                                                <span class="text-danger">(40% off)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                        </div>
+                        <!-- </a> -->
+                        
                     </div>
-                    <div class="col p-3 pb-5">
-                        <div class="mainDiv">
-                            <div class="card-f-img check1">
+                    <div class="col p-3 pb-5 hover-shadow">
+                        <!-- <a href="../view/select-items.html" class="text-decoration-none text-black "> -->
+                            <div class="mainDiv">
                                 <div class="">
-                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                        class="img-fluid" alt="...">
-                                </div>
+                                    <div class="card-f-img check1">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                            
                                 <div class="mt-1 d-flex justify-content-between">
                                     <div class="">
                                         <p class="btn fw-bold m-0">Roadster</p>
@@ -1521,7 +1544,7 @@
                                             <span class="text-danger">(40% off)</span>
                                         </div>
                                     </div>
-                                    <div class="m-3">
+                                    <div class="m-3 d-lg-none">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                                 <path
@@ -1529,78 +1552,78 @@
                                             </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-none d-md-block">
-                                <a href="#" class="text-decoration-none text-black">
-                                <div class="card-s-img check2  ">
-                                    <div class="">
-                                        <div class="position-relative" style=""> 
-                                            
-                                        <button type="button" style="" class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" onclick="sizeCard_open()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-                                              </svg>
+                                    </div>
+                                    <div class="card-s-img check2  " >
+                                        <div class="">
+                                            <div class="position-relative" style=""> 
+                                                <button class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SIMILARPRODUCTS" aria-controls="SIMILARPRODUCTS">                                            
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                                    </svg>
+                                                </button>
+    
+                                                <swiper-container onclick="demo()" class="mySwiper col-12 " pagination="true"
+                                                    pagination-clickable="true" navigation="false" space-between="30"
+                                                    centered-slides="true" autoplay-delay="2500"
+                                                    autoplay-disable-on-interaction="false">
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                </swiper-container>
+                                            </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Wishlist
                                             </button>
-                                            <swiper-container class="mySwiper col-12 " pagination="true"
-                                                pagination-clickable="true" navigation="false" space-between="30"
-                                                centered-slides="true" autoplay-delay="2500"
-                                                autoplay-disable-on-interaction="false">
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                            </swiper-container>
-                                        </div>
-                                    </div>
-                                    <div class="mt-1">
-                                        <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                            </svg>
-                                            Wishlist
-                                        </button>
-                                        <p class="fs-10 m-0">Sizes: S</p>
-                                        <div class="fs-10">
-                                            <span class="fw-bold">Rs. 250</span>
-                                            <span class="text-decoration-line-through">499</span>
-                                            <span class="text-danger">(40% off)</span>
+                                            <p class="fs-10 m-0">Sizes: S</p>
+                                            <div class="fs-10">
+                                                <span class="fw-bold">Rs. 250</span>
+                                                <span class="text-decoration-line-through">499</span>
+                                                <span class="text-danger">(40% off)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                        </div>
+                        <!-- </a> -->
+                        
                     </div>
-                    <div class="col p-3 pb-5">
-                        <div class="mainDiv">
-                            <div class="card-f-img check1">
+                    <div class="col p-3 pb-5 hover-shadow">
+                        <!-- <a href="../view/select-items.html" class="text-decoration-none text-black "> -->
+                            <div class="mainDiv">
                                 <div class="">
-                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                        class="img-fluid" alt="...">
-                                </div>
+                                    <div class="card-f-img check1">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                            
                                 <div class="mt-1 d-flex justify-content-between">
                                     <div class="">
                                         <p class="btn fw-bold m-0">Roadster</p>
@@ -1611,7 +1634,7 @@
                                             <span class="text-danger">(40% off)</span>
                                         </div>
                                     </div>
-                                    <div class="m-3">
+                                    <div class="m-3 d-lg-none">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                                 <path
@@ -1619,78 +1642,78 @@
                                             </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-none d-md-block">
-                                <a href="#" class="text-decoration-none text-black">
-                                <div class="card-s-img check2  ">
-                                    <div class="">
-                                        <div class="position-relative" style=""> 
-                                            
-                                        <button type="button" style="" class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" onclick="sizeCard_open()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-                                              </svg>
+                                    </div>
+                                    <div class="card-s-img check2  " >
+                                        <div class="">
+                                            <div class="position-relative" style=""> 
+                                                <button class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SIMILARPRODUCTS" aria-controls="SIMILARPRODUCTS">                                            
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                                    </svg>
+                                                </button>
+    
+                                                <swiper-container onclick="demo()" class="mySwiper col-12 " pagination="true"
+                                                    pagination-clickable="true" navigation="false" space-between="30"
+                                                    centered-slides="true" autoplay-delay="2500"
+                                                    autoplay-disable-on-interaction="false">
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                </swiper-container>
+                                            </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Wishlist
                                             </button>
-                                            <swiper-container class="mySwiper col-12 " pagination="true"
-                                                pagination-clickable="true" navigation="false" space-between="30"
-                                                centered-slides="true" autoplay-delay="2500"
-                                                autoplay-disable-on-interaction="false">
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                            </swiper-container>
-                                        </div>
-                                    </div>
-                                    <div class="mt-1">
-                                        <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                            </svg>
-                                            Wishlist
-                                        </button>
-                                        <p class="fs-10 m-0">Sizes: S</p>
-                                        <div class="fs-10">
-                                            <span class="fw-bold">Rs. 250</span>
-                                            <span class="text-decoration-line-through">499</span>
-                                            <span class="text-danger">(40% off)</span>
+                                            <p class="fs-10 m-0">Sizes: S</p>
+                                            <div class="fs-10">
+                                                <span class="fw-bold">Rs. 250</span>
+                                                <span class="text-decoration-line-through">499</span>
+                                                <span class="text-danger">(40% off)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                        </div>
+                        <!-- </a> -->
+                        
                     </div>
-                    <div class="col p-3 pb-5">
-                        <div class="mainDiv">
-                            <div class="card-f-img check1">
+                    <div class="col p-3 pb-5 hover-shadow">
+                        <!-- <a href="../view/select-items.html" class="text-decoration-none text-black "> -->
+                            <div class="mainDiv">
                                 <div class="">
-                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                        class="img-fluid" alt="...">
-                                </div>
+                                    <div class="card-f-img check1">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                            
                                 <div class="mt-1 d-flex justify-content-between">
                                     <div class="">
                                         <p class="btn fw-bold m-0">Roadster</p>
@@ -1701,7 +1724,7 @@
                                             <span class="text-danger">(40% off)</span>
                                         </div>
                                     </div>
-                                    <div class="m-3">
+                                    <div class="m-3 d-lg-none">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                                 <path
@@ -1709,78 +1732,78 @@
                                             </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-none d-md-block">
-                                <a href="#" class="text-decoration-none text-black">
-                                <div class="card-s-img check2  ">
-                                    <div class="">
-                                        <div class="position-relative" style=""> 
-                                            
-                                        <button type="button" style="" class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" onclick="sizeCard_open()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-                                              </svg>
+                                    </div>
+                                    <div class="card-s-img check2  " >
+                                        <div class="">
+                                            <div class="position-relative" style=""> 
+                                                <button class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SIMILARPRODUCTS" aria-controls="SIMILARPRODUCTS">                                            
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                                    </svg>
+                                                </button>
+    
+                                                <swiper-container onclick="demo()" class="mySwiper col-12 " pagination="true"
+                                                    pagination-clickable="true" navigation="false" space-between="30"
+                                                    centered-slides="true" autoplay-delay="2500"
+                                                    autoplay-disable-on-interaction="false">
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                </swiper-container>
+                                            </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Wishlist
                                             </button>
-                                            <swiper-container class="mySwiper col-12 " pagination="true"
-                                                pagination-clickable="true" navigation="false" space-between="30"
-                                                centered-slides="true" autoplay-delay="2500"
-                                                autoplay-disable-on-interaction="false">
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                            </swiper-container>
-                                        </div>
-                                    </div>
-                                    <div class="mt-1">
-                                        <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                            </svg>
-                                            Wishlist
-                                        </button>
-                                        <p class="fs-10 m-0">Sizes: S</p>
-                                        <div class="fs-10">
-                                            <span class="fw-bold">Rs. 250</span>
-                                            <span class="text-decoration-line-through">499</span>
-                                            <span class="text-danger">(40% off)</span>
+                                            <p class="fs-10 m-0">Sizes: S</p>
+                                            <div class="fs-10">
+                                                <span class="fw-bold">Rs. 250</span>
+                                                <span class="text-decoration-line-through">499</span>
+                                                <span class="text-danger">(40% off)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                        </div>
+                        <!-- </a> -->
+                        
                     </div>
-                    <div class="col p-3 pb-5">
-                        <div class="mainDiv">
-                            <div class="card-f-img check1">
+                    <div class="col p-3 pb-5 hover-shadow">
+                        <!-- <a href="../view/select-items.html" class="text-decoration-none text-black "> -->
+                            <div class="mainDiv">
                                 <div class="">
-                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                        class="img-fluid" alt="...">
-                                </div>
+                                    <div class="card-f-img check1">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                            
                                 <div class="mt-1 d-flex justify-content-between">
                                     <div class="">
                                         <p class="btn fw-bold m-0">Roadster</p>
@@ -1791,7 +1814,7 @@
                                             <span class="text-danger">(40% off)</span>
                                         </div>
                                     </div>
-                                    <div class="m-3">
+                                    <div class="m-3 d-lg-none">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                                 <path
@@ -1799,78 +1822,78 @@
                                             </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-none d-md-block">
-                                <a href="#" class="text-decoration-none text-black">
-                                <div class="card-s-img check2  ">
-                                    <div class="">
-                                        <div class="position-relative" style=""> 
-                                            
-                                        <button type="button" style="" class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" onclick="sizeCard_open()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-                                              </svg>
+                                    </div>
+                                    <div class="card-s-img check2  " >
+                                        <div class="">
+                                            <div class="position-relative" style=""> 
+                                                <button class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SIMILARPRODUCTS" aria-controls="SIMILARPRODUCTS">                                            
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                                    </svg>
+                                                </button>
+    
+                                                <swiper-container onclick="demo()" class="mySwiper col-12 " pagination="true"
+                                                    pagination-clickable="true" navigation="false" space-between="30"
+                                                    centered-slides="true" autoplay-delay="2500"
+                                                    autoplay-disable-on-interaction="false">
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                </swiper-container>
+                                            </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Wishlist
                                             </button>
-                                            <swiper-container class="mySwiper col-12 " pagination="true"
-                                                pagination-clickable="true" navigation="false" space-between="30"
-                                                centered-slides="true" autoplay-delay="2500"
-                                                autoplay-disable-on-interaction="false">
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                            </swiper-container>
-                                        </div>
-                                    </div>
-                                    <div class="mt-1">
-                                        <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                            </svg>
-                                            Wishlist
-                                        </button>
-                                        <p class="fs-10 m-0">Sizes: S</p>
-                                        <div class="fs-10">
-                                            <span class="fw-bold">Rs. 250</span>
-                                            <span class="text-decoration-line-through">499</span>
-                                            <span class="text-danger">(40% off)</span>
+                                            <p class="fs-10 m-0">Sizes: S</p>
+                                            <div class="fs-10">
+                                                <span class="fw-bold">Rs. 250</span>
+                                                <span class="text-decoration-line-through">499</span>
+                                                <span class="text-danger">(40% off)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                        </div>
+                        <!-- </a> -->
+                        
                     </div>
-                    <div class="col p-3 pb-5">
-                        <div class="mainDiv">
-                            <div class="card-f-img check1">
+                    <div class="col p-3 pb-5 hover-shadow">
+                        <!-- <a href="../view/select-items.html" class="text-decoration-none text-black "> -->
+                            <div class="mainDiv">
                                 <div class="">
-                                    <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                        class="img-fluid" alt="...">
-                                </div>
+                                    <div class="card-f-img check1">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                            
                                 <div class="mt-1 d-flex justify-content-between">
                                     <div class="">
                                         <p class="btn fw-bold m-0">Roadster</p>
@@ -1881,7 +1904,7 @@
                                             <span class="text-danger">(40% off)</span>
                                         </div>
                                     </div>
-                                    <div class="m-3">
+                                    <div class="m-3 d-lg-none">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                                 <path
@@ -1889,71 +1912,71 @@
                                             </svg>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-none d-md-block">
-                                <a href="#" class="text-decoration-none text-black">
-                                <div class="card-s-img check2  ">
-                                    <div class="">
-                                        <div class="position-relative" style=""> 
-                                            
-                                        <button type="button" style="" class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" onclick="sizeCard_open()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-                                              </svg>
-                                            </button>
-                                            <swiper-container class="mySwiper col-12 " pagination="true"
-                                                pagination-clickable="true" navigation="false" space-between="30"
-                                                centered-slides="true" autoplay-delay="2500"
-                                                autoplay-disable-on-interaction="false">
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                                <swiper-slide> <img
-                                                        src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                                        class="d-block w-100" alt="..."></swiper-slide>
-                                            </swiper-container>
-                                        </div>
                                     </div>
-                                    <div class="mt-1">
-                                        <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                            </svg>
-                                            Wishlist
-                                        </button>
-                                        <p class="fs-10 m-0">Sizes: S</p>
-                                        <div class="fs-10">
-                                            <span class="fw-bold">Rs. 250</span>
-                                            <span class="text-decoration-line-through">499</span>
-                                            <span class="text-danger">(40% off)</span>
+                                    <div class="card-s-img check2  " >
+                                        <div class="">
+                                            <div class="position-relative" style=""> 
+                                                <button class="position-absolute bottom-0 end-0 bg-white border-0 rounded-5 m-1 z-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#SIMILARPRODUCTS" aria-controls="SIMILARPRODUCTS">                                            
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                                    </svg>
+                                                </button>
+    
+                                                <swiper-container onclick="demo()" class="mySwiper col-12 " pagination="true"
+                                                    pagination-clickable="true" navigation="false" space-between="30"
+                                                    centered-slides="true" autoplay-delay="2500"
+                                                    autoplay-disable-on-interaction="false">
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                    <swiper-slide> <img
+                                                            src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                                            class="d-block w-100" alt="..."></swiper-slide>
+                                                </swiper-container>
+                                            </div>
+                                        </div>
+                                        <div class="mt-1">
+                                            <button class="fw-bold m-0 btn w-100 border rounded-0 border-black text-uppercase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                </svg>
+                                                Wishlist
+                                            </button>
+                                            <p class="fs-10 m-0">Sizes: S</p>
+                                            <div class="fs-10">
+                                                <span class="fw-bold">Rs. 250</span>
+                                                <span class="text-decoration-line-through">499</span>
+                                                <span class="text-danger">(40% off)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
                             </div>
-                        </div>
+                        <!-- </a> -->
+                        
                     </div>
+
                 </div>
             </div>
             
@@ -1988,20 +2011,13 @@
     <div class="">
        <!-- Button trigger modal -->
     <div class="fixed-bottom  d-block d-lg-none col-12 d-flex">
-        <button type="button" class="btn btn-light rounded-0 col-6 p-0 m-0" data-bs-toggle="dropdown" aria-expanded="false">
+
+        <button class="btn btn-light rounded-0 col-6 p-0 m-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#SORT" aria-controls="SORT">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
             </svg>
             SORT
         </button>
-        <!-- <button type="button" class="btn btn-secondary dropdown-toggle" >
-            Dropup
-          </button> -->
-          <ul class="dropdown-menu col-6">
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-          </ul>
         <button type="button" class="btn btn-light rounded-0 col-6 p-0 m-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-check" viewBox="0 0 16 16">
                 <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z"/>
@@ -2010,9 +2026,29 @@
             </svg>
             FILTER
         </button>
+
     </div>
   
     </div>
+    
+
+    <div class="">
+        <div class="col-3"></div>
+        <div class="offcanvas offcanvas-bottom  position-fixed bottom-0 start-50 translate-middle-x " tabindex="-1" id="SORT" aria-labelledby="SORTLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="SORTLabel">Offcanvas bottom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <ul class="dropdown-menu col-6">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
 </div>
  <!-- Modal -->
     <div class="modal fade bg-white" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -2110,7 +2146,7 @@
     </div>
   
   <!--start: modal -->
-  <div class="position-fixed col-12 " style=" top: 0px;z-index: 99999; display: none;min-height: 100%;" id="mySidebar">
+  <!-- <div class="position-fixed col-12 " style=" top: 0px;z-index: 99999; display: none;min-height: 100%;" id="mySidebar">
     <div class="position-absolute w-100" style="right: 0;">
         <div class="d-flex w-100" >
             <div class="col-8 " style="background-color: black;opacity: 50%;"></div>
@@ -2196,6 +2232,93 @@
             </div>
         </div>
     </div>
+</div> -->
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="SIMILARPRODUCTS" aria-labelledby="SIMILARPRODUCTSLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex w-100" >
+
+        <div class=" bg-white "style="height: 800px;overflow:auto;">
+            <div class="">
+                <p class="text-center">SIMILAR PRODUCTS</p>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="col-6 p-3">
+                    <div class="">
+                        <div class="">
+                            <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                class="img-fluid" alt="...">
+                        </div>
+                        <div class="mt-1">
+                            <p class="btn fw-bold m-0">Roadster</p>
+                            <p class="fs-10 m-0">pure cotton t-shirt</p>
+                            <div class="fs-10">
+                                <span class="fw-bold">Rs. 250</span>
+                                <span class="text-decoration-line-through">499</span>
+                                <span class="text-danger">(40% off)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="">
+                        <div class="">
+                            <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                class="img-fluid" alt="...">
+                        </div>
+                        <div class="mt-1">
+                            <p class="btn fw-bold m-0">Roadster</p>
+                            <p class="fs-10 m-0">pure cotton t-shirt</p>
+                            <div class="fs-10">
+                                <span class="fw-bold">Rs. 250</span>
+                                <span class="text-decoration-line-through">499</span>
+                                <span class="text-danger">(40% off)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="">
+                        <div class="">
+                            <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                class="img-fluid" alt="...">
+                        </div>
+                        <div class="mt-1">
+                            <p class="btn fw-bold m-0">Roadster</p>
+                            <p class="fs-10 m-0">pure cotton t-shirt</p>
+                            <div class="fs-10">
+                                <span class="fw-bold">Rs. 250</span>
+                                <span class="text-decoration-line-through">499</span>
+                                <span class="text-danger">(40% off)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="">
+                        <div class="">
+                            <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                class="img-fluid" alt="...">
+                        </div>
+                        <div class="mt-1">
+                            <p class="btn fw-bold m-0">Roadster</p>
+                            <p class="fs-10 m-0">pure cotton t-shirt</p>
+                            <div class="fs-10">
+                                <span class="fw-bold">Rs. 250</span>
+                                <span class="text-decoration-line-through">499</span>
+                                <span class="text-danger">(40% off)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </div>
 </div>
   <!--end: modal -->
 <!-- end:nevbar -->
@@ -2544,6 +2667,26 @@
         }, function () {
             $(this).removeClass('show');
             $(this).find('.dropdown-menu').removeClass('show');
+        });
+    });
+</script>
+
+
+
+<script>
+    function demo(){
+        location.assign("../view/select-items.html");
+    }
+</script>
+
+
+<script>
+    var radioInputs = document.querySelectorAll("input[name='fruit']");
+    var logElement = document.getElementById("log");
+
+    radioInputs.forEach(function (radioInput) {
+        radioInput.addEventListener("click", function () {
+            logElement.innerHTML = "I want to eat: " + document.querySelector("input[name='fruit']:checked").value;
         });
     });
 </script>
