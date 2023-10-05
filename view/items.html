@@ -2,23 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/content.css">
+    
+    <!-- title & logo { -->
+        <title>Myntra</title>
+        <link rel="icon" href="../../img/icon/icon-removebg.png" type="image/icon type">
+    <!-- title & logo } -->
 
-    <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/js/bootstrap.js"> -->
-    <script src="../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <!--meta tags { -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta tags } -->
+    
+    <!--costom css { -->
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/content.css">
+    <!--costom css } -->
 
-    <link rel="stylesheet/scss" type="text/css" href="../css/style1.scss">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!--bootstrap { -->
+        <link rel="stylesheet" href="../../css/bootstrap-5.3.1-dist/css/bootstrap.css">
+        <script src="../../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <!--bootstrap } -->
 
-    <link rel="icon" href="../img/icon/icon-removebg.png" type="image/icon type">
-    <style>
-        body {
+    <!--icon { -->
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--icon } -->
+    
+    <!-- costom page css { -->
+        <style>
+
+body {
             width: 100%;
             overflow-x: hidden;
             font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif !important;
@@ -58,8 +71,15 @@
         .check2 {
             display: none;
         }
-    </style>
+
+        </style>
+    <!-- costom page css } -->
+    
+
 </head>
+<body>
+    
+
 
 <!-- start:nevbar -->
 <nevbar class="">
@@ -72,7 +92,7 @@
                             <button class="btn d-block d-lg-none fs-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">&#9776;</button>
                         </div>
                         <div class="col-2">
-                            <a href="-5">
+                            <a href="../index.html">
                                 <div class="logo_image_prop ">
                                     <img src="../img/icon/icon.png" alt="" class="w-100 h-100">
                                 </div>
@@ -888,18 +908,18 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="" class="text-decoration text-secondary ">
+                            <a href="../view/my/wishlist.html" class="text-decoration text-secondary ">
                                 <li class="px-lg-3 py-2 p-2 text-center  text-center">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                         </svg>
                                     </span>
-                                    <a href="../view/wishlist.html"
+                                    <a href="../view/my/wishlist.html"
                                         class="fs-10 desktop-nav text-decoration-none text-black text-bold d-none d-lg-block">Wishlist</a>
                                 </li>
                             </a>
-                            <a href="" class="text-decoration text-secondary">
+                            <a href="../view/checkout-cart-empty.html" class="text-decoration text-secondary">
                                 <li class="px-lg-3 py-2 p-2 text-center  text-center">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
@@ -1048,43 +1068,53 @@
         </div>
         <div class="col-7 ps-4">
             <ul class="d-flex justify-content-between list-unstyled">
-                <li>
-                    <input type="radio" name="fruit" value="Add-Ons" id="orange">
-                    Add-Ons
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                            class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
-                        </svg>
-                    </span>
+                <li class="cursor-pointer">
+                    <input type="radio" class="btn-check" name="fruit" value="Add-Ons" id="Add-Ons" autocomplete="off">
+                    <label class=""  for="Add-Ons">
+                        Add-Ons
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                class="bi bi-chevron-compact-up " viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
+                            </svg>
+                        </span>
+                    </label>
+                    
                 </li>
-                <li>
-                    <input type="radio" name="fruit" value="Bundles" id="orange">
-                    Bundles
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                            class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
-                        </svg>
-                    </span>
+                <li class="cursor-pointer">
+                    <input type="radio" class="btn-check" name="fruit" value="Bundles" id="Bundles" autocomplete="off">
+                    <label class="" for="Bundles">
+                        Bundles
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
+                            </svg>
+                        </span>
+                    </label>
+                    
                 </li>
-                <li><input type="radio" name="fruit" value="collar" id="orange">
-                    collar
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                            class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
-                        </svg>
-                    </span>
+                <li class="cursor-pointer">
+                    <input type="radio" class="btn-check" name="fruit" value="collar" id="collar" autocomplete="off">
+                    <label class="" for="collar">
+                        collar
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
+                            </svg>
+                        </span>
+                    </label>
+                    
                 </li>
-                <li data-bs-toggle="dropdown" aria-expanded="false">Country of Origin</li>
-                <li data-bs-toggle="dropdown" aria-expanded="false">Fabric</li>
-                <li data-bs-toggle="dropdown" aria-expanded="false">Fabric 2</li>
-                <li data-bs-toggle="dropdown" aria-expanded="false">fit</li>
-                <li data-bs-toggle="dropdown" aria-expanded="false">+17 more</li>
+                <li  class="cursor-pointer" data-bs-toggle="dropdown" aria-expanded="false">Country of Origin</li>
+                <li  class="cursor-pointer" data-bs-toggle="dropdown" aria-expanded="false">Fabric</li>
+                <li  class="cursor-pointer" data-bs-toggle="dropdown" aria-expanded="false">Fabric 2</li>
+                <li  class="cursor-pointer" data-bs-toggle="dropdown" aria-expanded="false">fit</li>
+                <li  class="cursor-pointer" data-bs-toggle="dropdown" aria-expanded="false">+17 more</li>
             </ul>
             <!-- <form>
                 <div>
@@ -1250,9 +1280,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-10 col-12 border-top ">
-            <div class="">
-                <div id="log"></div>
+        <div class="col-lg-10 col-12  ">
+            <div class=" border-bottom">
+                <div class="" id="log"></div>
             </div>
             <div class="border-bottom">
                 <div class="d-flex flex-wrap  row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 m-2 	">
@@ -2050,6 +2080,7 @@
       </div>
       
 </div>
+
  <!-- Modal -->
     <div class="modal fade bg-white" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -2145,182 +2176,94 @@
         </div>
     </div>
   
-  <!--start: modal -->
-  <!-- <div class="position-fixed col-12 " style=" top: 0px;z-index: 99999; display: none;min-height: 100%;" id="mySidebar">
-    <div class="position-absolute w-100" style="right: 0;">
-        <div class="d-flex w-100" >
-            <div class="col-8 " style="background-color: black;opacity: 50%;"></div>
-
-            <div class="col-4 bg-white "style="height: 800px;overflow:auto;">
-                <div class="mb-5">
-                    <button class="" onclick="sizeCard_close()"> &times;</button>
-                </div>
-                <div class="">
-                    <p class="text-center">SIMILAR PRODUCTS</p>
-                </div>
-                <div class="d-flex flex-wrap">
-                    <div class="col-6 p-3">
-                        <div class="">
-                            <div class="">
-                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                    class="img-fluid" alt="...">
-                            </div>
-                            <div class="mt-1">
-                                <p class="btn fw-bold m-0">Roadster</p>
-                                <p class="fs-10 m-0">pure cotton t-shirt</p>
-                                <div class="fs-10">
-                                    <span class="fw-bold">Rs. 250</span>
-                                    <span class="text-decoration-line-through">499</span>
-                                    <span class="text-danger">(40% off)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 p-3">
-                        <div class="">
-                            <div class="">
-                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                    class="img-fluid" alt="...">
-                            </div>
-                            <div class="mt-1">
-                                <p class="btn fw-bold m-0">Roadster</p>
-                                <p class="fs-10 m-0">pure cotton t-shirt</p>
-                                <div class="fs-10">
-                                    <span class="fw-bold">Rs. 250</span>
-                                    <span class="text-decoration-line-through">499</span>
-                                    <span class="text-danger">(40% off)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 p-3">
-                        <div class="">
-                            <div class="">
-                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                    class="img-fluid" alt="...">
-                            </div>
-                            <div class="mt-1">
-                                <p class="btn fw-bold m-0">Roadster</p>
-                                <p class="fs-10 m-0">pure cotton t-shirt</p>
-                                <div class="fs-10">
-                                    <span class="fw-bold">Rs. 250</span>
-                                    <span class="text-decoration-line-through">499</span>
-                                    <span class="text-danger">(40% off)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 p-3">
-                        <div class="">
-                            <div class="">
-                                <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                    class="img-fluid" alt="...">
-                            </div>
-                            <div class="mt-1">
-                                <p class="btn fw-bold m-0">Roadster</p>
-                                <p class="fs-10 m-0">pure cotton t-shirt</p>
-                                <div class="fs-10">
-                                    <span class="fw-bold">Rs. 250</span>
-                                    <span class="text-decoration-line-through">499</span>
-                                    <span class="text-danger">(40% off)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+    <!--start: modal -->
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="SIMILARPRODUCTS" aria-labelledby="SIMILARPRODUCTSLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </div>
-    </div>
-</div> -->
+            <div class="offcanvas-body">
+                <div class="d-flex w-100" >
 
-<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="SIMILARPRODUCTS" aria-labelledby="SIMILARPRODUCTSLabel">
-  <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="d-flex w-100" >
+                    <div class=" bg-white "style="height: 800px;overflow:auto;">
+                        <div class="">
+                            <p class="text-center">SIMILAR PRODUCTS</p>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-6 p-3">
+                                <div class="">
+                                    <div class="">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="btn fw-bold m-0">Roadster</p>
+                                        <p class="fs-10 m-0">pure cotton t-shirt</p>
+                                        <div class="fs-10">
+                                            <span class="fw-bold">Rs. 250</span>
+                                            <span class="text-decoration-line-through">499</span>
+                                            <span class="text-danger">(40% off)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-3">
+                                <div class="">
+                                    <div class="">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="btn fw-bold m-0">Roadster</p>
+                                        <p class="fs-10 m-0">pure cotton t-shirt</p>
+                                        <div class="fs-10">
+                                            <span class="fw-bold">Rs. 250</span>
+                                            <span class="text-decoration-line-through">499</span>
+                                            <span class="text-danger">(40% off)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-3">
+                                <div class="">
+                                    <div class="">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="btn fw-bold m-0">Roadster</p>
+                                        <p class="fs-10 m-0">pure cotton t-shirt</p>
+                                        <div class="fs-10">
+                                            <span class="fw-bold">Rs. 250</span>
+                                            <span class="text-decoration-line-through">499</span>
+                                            <span class="text-danger">(40% off)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-3">
+                                <div class="">
+                                    <div class="">
+                                        <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
+                                            class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="btn fw-bold m-0">Roadster</p>
+                                        <p class="fs-10 m-0">pure cotton t-shirt</p>
+                                        <div class="fs-10">
+                                            <span class="fw-bold">Rs. 250</span>
+                                            <span class="text-decoration-line-through">499</span>
+                                            <span class="text-danger">(40% off)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class=" bg-white "style="height: 800px;overflow:auto;">
-            <div class="">
-                <p class="text-center">SIMILAR PRODUCTS</p>
-            </div>
-            <div class="d-flex flex-wrap">
-                <div class="col-6 p-3">
-                    <div class="">
-                        <div class="">
-                            <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                class="img-fluid" alt="...">
-                        </div>
-                        <div class="mt-1">
-                            <p class="btn fw-bold m-0">Roadster</p>
-                            <p class="fs-10 m-0">pure cotton t-shirt</p>
-                            <div class="fs-10">
-                                <span class="fw-bold">Rs. 250</span>
-                                <span class="text-decoration-line-through">499</span>
-                                <span class="text-danger">(40% off)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 p-3">
-                    <div class="">
-                        <div class="">
-                            <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                class="img-fluid" alt="...">
-                        </div>
-                        <div class="mt-1">
-                            <p class="btn fw-bold m-0">Roadster</p>
-                            <p class="fs-10 m-0">pure cotton t-shirt</p>
-                            <div class="fs-10">
-                                <span class="fw-bold">Rs. 250</span>
-                                <span class="text-decoration-line-through">499</span>
-                                <span class="text-danger">(40% off)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 p-3">
-                    <div class="">
-                        <div class="">
-                            <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                class="img-fluid" alt="...">
-                        </div>
-                        <div class="mt-1">
-                            <p class="btn fw-bold m-0">Roadster</p>
-                            <p class="fs-10 m-0">pure cotton t-shirt</p>
-                            <div class="fs-10">
-                                <span class="fw-bold">Rs. 250</span>
-                                <span class="text-decoration-line-through">499</span>
-                                <span class="text-danger">(40% off)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 p-3">
-                    <div class="">
-                        <div class="">
-                            <img src="../img/item-img/HIGHLANDER-Men-Black-Solid-Leather-Jacket-7061669106702041-1.webp"
-                                class="img-fluid" alt="...">
-                        </div>
-                        <div class="mt-1">
-                            <p class="btn fw-bold m-0">Roadster</p>
-                            <p class="fs-10 m-0">pure cotton t-shirt</p>
-                            <div class="fs-10">
-                                <span class="fw-bold">Rs. 250</span>
-                                <span class="text-decoration-line-through">499</span>
-                                <span class="text-danger">(40% off)</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-  </div>
-</div>
-  <!--end: modal -->
+            </div>
+    <!--end: modal -->
 <!-- end:nevbar -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -2649,7 +2592,6 @@
 
 
 
-
 <script>
     function sizeCard_open() {
         document.getElementById("mySidebar").style.display = "block";
@@ -2681,12 +2623,34 @@
 
 
 <script>
-    var radioInputs = document.querySelectorAll("input[name='fruit']");
-    var logElement = document.getElementById("log");
+   var data = "<div class='ms-2 ps-4 p-4 row row-cols-6'><div class='form-check col'><input class='form-check-input' type='checkbox' value='' id='flexCheckDefault'><label class='form-check-label' for='flexCheckDefault'>Default checkbox</label></div><div class='form-check'><input class='form-check-input' type='checkbox' value='' id='flexCheckChecked' checked><label class='form-check-label' for='flexCheckChecked'>Checked checkbox </label></div></div>";
 
-    radioInputs.forEach(function (radioInput) {
-        radioInput.addEventListener("click", function () {
-            logElement.innerHTML = "I want to eat: " + document.querySelector("input[name='fruit']:checked").value;
-        });
+var radioInputs = document.querySelectorAll("input[name='fruit']");
+var logElement = document.getElementById("log");
+var selectedRadioInput = null;
+
+radioInputs.forEach(function (radioInput) {
+    radioInput.addEventListener("click", function () {
+        if (radioInput === selectedRadioInput) {
+            logElement.innerHTML = "";
+            selectedRadioInput = null;
+        } else {
+            logElement.innerHTML = data;
+            selectedRadioInput = radioInput;
+        }
     });
+});
+
 </script>
+
+
+    <!-- /* icon rotate { */ -->
+        <script>
+            $(".rotate").click(function () {
+                $(this).toggleClass("down");
+            })
+        </script>
+    <!-- /* icon rotate } */ -->
+
+
+

@@ -2,27 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/content.css">
+    
+    <!-- title & logo { -->
+        <title>Myntra</title>
+        <link rel="icon" href="../../img/icon/icon-removebg.png" type="image/icon type">
+    <!-- title & logo } -->
 
-    <link rel="stylesheet" href="../../css/bootstrap-5.3.1-dist/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/js/bootstrap.js"> -->
-    <script src="../../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <!--meta tags { -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta tags } -->
+    
+    <!--costom css { -->
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/content.css">
+    <!--costom css } -->
 
-    <!-- <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <!--bootstrap { -->
+        <link rel="stylesheet" href="../../css/bootstrap-5.3.1-dist/css/bootstrap.css">
+        <script src="../../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <!--bootstrap } -->
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!--icon { -->
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!--icon } -->
+    
+    <!-- costom page css { -->
+        <style>
 
-    <link rel="icon" href="../../img/icon/icon-removebg.png" type="image/icon type">
-    <style>
-   
 
-    </style>
+        </style>
+    <!-- costom page css } -->
+    
+
 </head>
 
 <body class="bg-danger-subtle" style="">
@@ -30,24 +42,23 @@
 <nevbar class="">
     <header id="header" class="position-fixed top-0 w-100 z-2">
         <div class="d-flex align-items-center justify-content-start bg-white bottom_shadow ">
-            <div class="mx-3 w-100 d-flex desktop-nav-justify">
+            <div class="mx-3 w-100 d-flex justify-content-between">
                 <div class="col-md-6 desktop-nav-width">
                     <div class="col-12 d-flex align-items-center justify-content-start">
                         <div class="desktop-nav-dropdown">
-                            <button class="desktop-nav-dropdown openbtn d-block d-md-none" onclick="openNav()">&#9776;</button>
-                          
+                            <button class="btn d-block d-lg-none fs-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">&#9776;</button>
                         </div>
                         <div class="col-2">
-                            <a href="">
-                                <div class="logo_image_prop">
+                            <a href="../../index.html">
+                                <div class="logo_image_prop ">
                                     <img src="../../img/icon/icon.png" alt="" class="w-100 h-100">
                                 </div>
                             </a>
                         </div>
-                        <div class="col-10  desktop-nav-hide ml-3">
-                            <ul class="d-flex align-items-center justify-content-start list-unstyled mb-0">
-                                <li class="px-md-3 py-4 nav-item-dropdown border-danger">
-                                    <a href="../../view/home.html"
+                        <div class="col-10  d-none d-lg-block ml-3">
+                            <ul class="d-flex align-items-center justify-content-start list-unstyled mb-0 ">
+                                <li class="px-md-3  fw-bold fs-small py-4 nav-item-dropdown border-danger">
+                                    <a href="../../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">MEN</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row ">
@@ -68,11 +79,11 @@
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
-
+  
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
-
+  
                                                 <h6 class="color-l6">Topwear</h6>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
@@ -119,7 +130,7 @@
                                                         href="../../view/items.html">Sweatshirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-
+  
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
@@ -177,11 +188,11 @@
                                                 <h6 class="text-danger">Topwear</h6>
                                             </ul>
                                         </li>
-
+  
                                     </ul>
                                 </div>
-                                <li class="px-md-3 py-4  nav-item-dropdown border-warning">
-                                    <a href="../../view/home.html"
+                                <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-warning">
+                                    <a href="../../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">WOMEN</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row">
@@ -202,11 +213,11 @@
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
-
+  
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
-
+  
                                                 <h6 class="text-warning">Topwear</h6>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
@@ -253,7 +264,7 @@
                                                         href="../../view/items.html">Sweatshirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-
+  
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
@@ -311,11 +322,11 @@
                                                 <h6 class="text-warning">Topwear</h6>
                                             </ul>
                                         </li>
-
+  
                                     </ul>
                                 </div>
-                                <li class="px-md-3 py-4  nav-item-dropdown border-primary">
-                                    <a href="../../view/home.html"
+                                <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-primary">
+                                    <a href="../../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">KIDS</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row">
@@ -336,11 +347,11 @@
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
-
+  
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
-
+  
                                                 <h6 class="text-primary">Topwear</h6>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
@@ -387,7 +398,7 @@
                                                         href="../../view/items.html">Sweatshirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-
+  
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
@@ -445,10 +456,10 @@
                                                 <h6 class="text-primary">Topwear</h6>
                                             </ul>
                                         </li>
-
+  
                                     </ul>
                                 </div>
-                                <li class="px-md-3 py-4  nav-item-dropdown border-warning">
+                                <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-warning">
                                     <a href="../../view/home-living.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase white-space-nowrap">HOME
                                         & LIVING</a>
@@ -471,11 +482,11 @@
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
-
+  
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
-
+  
                                                 <h6 class="text-warning">Topwear</h6>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
@@ -522,7 +533,7 @@
                                                         href="../../view/items.html">Sweatshirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-
+  
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
@@ -580,10 +591,10 @@
                                                 <h6 class="text-warning">Topwear</h6>
                                             </ul>
                                         </li>
-
+  
                                     </ul>
                                 </div>
-                                <li class="px-md-3 py-4  nav-item-dropdown border-info">
+                                <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-info">
                                     <a href="../../view/items.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">
                                         BEAUTY</a>
@@ -606,11 +617,11 @@
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
                                                 <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
-
+  
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
-
+  
                                                 <h6 class="color-l6">Topwear</h6>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
@@ -657,7 +668,7 @@
                                                         href="../../view/items.html">Sweatshirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-
+  
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
@@ -715,10 +726,10 @@
                                                 <h6 class="text-info">Topwear</h6>
                                             </ul>
                                         </li>
-
+  
                                     </ul>
                                 </div>
-                                <li class="px-md-3 py-4  nav-item-dropdown">
+                                <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown">
                                     <a class="desktop-nav nav-link position-relative text-uppercase" href="#">Studio
                                         <sup
                                             class="text-decoration-none text-danger text-uppercase position-absolute top-0 start-100 translate-middle">new</sup>
@@ -739,9 +750,9 @@
                     </div>
                 </div>
                <div class="col-6 d-flex justify-content-end">
-                   <div class="col-md-8 d-lg-flex d-none desktop-nav-search-input-box">
-                    <div class="desktop-nav-search-input-box-in input-group mb-3 pt-3 align-items-center justify-content-start">
-                        <div class="input-group-prepend ">
+                   <div class="col-lg-8 col-md-4  d-lg-flex d-none justify-content-end">
+                    <div class="w-100 input-group mb-3 pt-3 pe-2">
+                        <div class="">
                             <span style="background: #eaeaec;"
                                 class="rounded-end-0 ps-3 input-group-text p-2 shadow-none border-0"
                                 id="basic-addon1">
@@ -749,35 +760,37 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                     </svg>
-                                </i></span>
+                                </span>
                             </span>
                         </div>
                         <input style="background: #eaeaec;" type="text"
-                            class="form-control p-2 shadow-none border-0 desktop-nav-search-input"
+                            class="col-10 form-control p-2 shadow-none border-0 "
                             placeholder="Search for products, brands and more" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     </div>
-                    <div class="col-md-4 d-flex">
+                    <div class="col-lg-4 d-flex justify-content-end">
                         <ul class="d-flex align-items-center justify-content-start list-unstyled mb-0">
-                            <li class="px-md-3 py-2 text-center d-md-none">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                    </svg>
-                                </span>
-                            </li>
-                            <a href="#" class="text-decoration text-secondary">
-                                <li class="px-md-3 py-2 nav-profile-dropdown border-danger desktop-nav-right text-center desktop-nav-hide">
+                            <a href="" class="text-decoration text-secondary d-lg-none">
+                                <li class="px-lg-3 py-2 p-2 text-center ">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration text-secondary d-none d-lg-block">
+                                <li class="px-lg-3 py-2 text-center   nav-profile-dropdown border-danger  text-center ">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                                         </svg>
                                     </span>
-                                    <a href="../../view/my/profile.html" class="fs-10  text-decoration-none text-black text-bold">Profile</a>
+                                    <a href="../../view/my/profile.html" class="fs-10  text-decoration-none text-black text-bold d-none d-lg-block">Profile</a>
                                 </li>
                             </a>
-                            <div class="dropdown-profile-list text-start  row">
+                            <div class="dropdown-profile-list text-start  row ">
                                 <div style="" class="dropdown-item-card text-start z-1">
                                     <div class="border-bottom border-5 "
                                         style="height: 10px;width: 75px;margin-left: 215px;border-color: transparent !important;">
@@ -794,27 +807,27 @@
                                             <div>
                                                 <ul class="list-unstyled">
                                                     <li class="">
-                                                        <a href="/view/my/my-orders.html" class="text-decoration-none text-black">
+                                                        <a href="/view/my/my-orders.html" class="dropdown-item text-decoration-none text-black">
                                                             Orders
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="/view/my/wishlist-empty.html" class="text-decoration-none text-black">
+                                                        <a href="/view/my/wishlist-empty.html" class="dropdown-item text-decoration-none text-black">
                                                             Wishlist
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../../view/my/" class="text-decoration-none text-black">
+                                                        <a href="../../view/forms/giftcard.html" class="dropdown-item text-decoration-none text-black">
                                                             Gift Cards
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../../view/my/" class="text-decoration-none text-black">
+                                                        <a href="../../view/my/" class="dropdown-item text-decoration-none text-black">
                                                             Contact Us
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../../view/my/" class="text-decoration-none text-black">
+                                                        <a href="../../view/my/myntrainsider.html" class="dropdown-item text-decoration-none text-black">
                                                             Myntra InsiderNew
                                                         </a>
                                                     </li>
@@ -822,27 +835,27 @@
                                                 <hr>
                                                 <ul class="list-unstyled">
                                                     <li class="">
-                                                        <a href="../../view/my/myntracredit.html" class="text-decoration-none text-black">
+                                                        <a href="../../view/my/myntracredit.html" class="dropdown-item text-decoration-none text-black">
                                                             Myntra Credit
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../../view/my/coupons.html" class="text-decoration-none text-black">
+                                                        <a href="../../view/my/coupons.html" class="dropdown-item text-decoration-none text-black">
                                                             Coupons
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../../view/my/savedcards.html" class="text-decoration-none text-black">
+                                                        <a href="../../view/my/savedcards.html" class="dropdown-item text-decoration-none text-black">
                                                             Saved Cards
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../../view/my/savedUPI.html" class="text-decoration-none text-black">
+                                                        <a href="../../view/my/savedUPI.html" class="dropdown-item text-decoration-none text-black">
                                                             Saved VPA
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../../view/my/address.html" class="text-decoration-none text-black">
+                                                        <a href="../../view/my/address.html" class="dropdown-item text-decoration-none text-black">
                                                             Saved Addresses
                                                         </a>
                                                     </li>
@@ -852,182 +865,143 @@
                                     </ul>
                                 </div>
                             </div>
-                            <li class="px-md-3 py-2 desktop-nav-right text-center">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                    </svg>
-                                </span>
-                                <a href="../../view/wishlist.html"
-                                    class="fs-10 desktop-nav text-decoration-none text-black text-bold desktop-nav-hide">Wishlist</a>
-                            </li>
-                            <li class="px-md-3 py-2 desktop-nav-right text-center">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                                    </svg>
-                                </span>
-                                <a href="../../view/checkout-cart-empty.html"
-                                    class="fs-10 desktop-nav text-decoration-none text-black text-bold desktop-nav-hide">bag</a>
-                            </li>
+                            <a href="../../view/my/wishlist.html" class="text-decoration text-secondary ">
+                                <li class="px-lg-3 py-2 p-2 text-center  text-center">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                        </svg>
+                                    </span>
+                                    <a href="../../view/my/wishlist.html"
+                                        class="fs-10 desktop-nav text-decoration-none text-black text-bold d-none d-lg-block">Wishlist</a>
+                                </li>
+                            </a>
+                            <a href="../../view/checkout-cart-empty.html" class="text-decoration text-secondary">
+                                <li class="px-lg-3 py-2 p-2 text-center  text-center">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                        </svg>
+                                    </span>
+                                    <a href="../../view/checkout-cart-empty.html"
+                                        class="fs-10 desktop-nav text-decoration-none text-black text-bold d-none d-lg-block">bag</a>
+                                </li>
+                            </a>
                         </ul>
                     </div>
                </div> 
             </div>
         </div>
     </header>
-    <!-- start:sidebar -->
-    <div id="mySidenav" class="sidenav bg-body-tertiary d-md-none z-3 pt-5">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div id="st-container" class="st-container">
-            <nav class="st-menu st-effect-1 position-relative lh-lg" id="menu-1">
-                <img class="img-fluid"
-                    src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_400,c_limit,fl_progressive/assets/images/2023/1/25/a1bd0077-bedc-4b6e-a040-90789747dd881674670405165-offer-banner-400-1080x496-code-_-MYNTRA300.jpg"
-                    alt="">
-                <!-- <ul class="list-unstyled ps-4 fs-small">
-                    <li class="fs-small">
-                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
-                            data-target="#menSubMenuMEN">
-                            <a class="icon " href="#">MEN</a> <span class="col-2">></span>
-                        </p>
-                        <ul class="list-unstyled collapse" id="menSubMenuMEN">
-                            <li><a class="icon " href="#">Submenu Item 1</a></li>
-                            <li><a class="icon " href="#">Submenu Item 2</a></li>
-                            <li><a class="icon " href="#">Submenu Item 3</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
-                            data-target="#menSubMenuWOMEN">
-                            <a class="icon " href="#">WOMEN</a> <span class="col-2">></span>
-                        </p>
-                        <ul class="list-unstyled collapse" id="menSubMenuWOMEN">
-                            <li><a class="icon " href="#">Submenu Item 1</a></li>
-                            <li><a class="icon " href="#">Submenu Item 2</a></li>
-                            <li><a class="icon " href="#">Submenu Item 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
-                            data-target="#menSubMenuKIDS">
-                            <a class="icon " href="#">KIDS</a> <span class="col-2">></span>
-                        </p>
-                        <ul class="list-unstyled collapse" id="menSubMenuKIDS">
-                            <li><a class="icon " href="#">Submenu Item 1</a></li>
-                            <li><a class="icon " href="#">Submenu Item 2</a></li>
-                            <li><a class="icon " href="#">Submenu Item 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
-                            data-target="#menSubMenuHOMELIVING">
-                            <a class="icon " href="#">HOME & LIVING</a> <span class="col-2">></span>
-                        </p>
-                        <ul class="list-unstyled collapse" id="menSubMenuHOMELIVING">
-                            <li><a class="icon " href="#">Submenu Item 1</a></li>
-                            <li><a class="icon " href="#">Submenu Item 2</a></li>
-                            <li><a class="icon " href="#">Submenu Item 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="d-flex justify-content-between align-items-center" data-toggle="collapse"
-                            data-target="#menSubMenuBEAUTY">
-                            <a class="icon " href="#">BEAUTY</a> <span class="col-2">></span>
-                        </p>
-                        <ul class="list-unstyled collapse" id="menSubMenuBEAUTY">
-                            <li><a class="icon " href="#">Submenu Item 1</a></li>
-                            <li><a class="icon " href="#">Submenu Item 2</a></li>
-                            <li><a class="icon " href="#">Submenu Item 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="list-unstyled ps-4">
-                    <hr>
-                    <li>
-
-                    </li>
-                    <li>
-                        <a class="icon " href="#">myntra Studio
-                            <span class="border border-3 rounded-pill border-danger text-danger text-new">new</span>
-                        </a>
-
-                    </li>
-                    <li><a class="icon " href="#">Myntra Mall
-                            <span class="border border-3 rounded-pill border-danger text-danger text-new">new</span>
-                        </a>
-                    </li>
-                    <li><a class="icon " href="#">Myntra Insider</a></li>
-                    <li><a class="icon " href="#">Gift Cards</a></li>
-                    <li><a class="icon " href="#">FAQs</a></li>
-                    <li><a class="icon " href="#">Legal</a></li>
-                </ul> -->
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
-                    </li>
-                    <li>
-                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
-                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                    </li>
-                </ul>
-                <img class="img-fluid"
-                    src="https://assets.myntassets.com/assets/images/retaillabs/2022/12/30/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA---App-Download-banner.png"
-                    alt="">
-            </nav>
+  
+  
+  
+    <!-- 2 -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </div>
-
-</nevbar>
-<!-- end:nevbar -->
+        <div class="offcanvas-body">
+            <div id="st-container" class="st-container">
+                <nav class="st-menu st-effect-1 position-relative lh-lg" id="menu-1">
+                    <img class="img-fluid"
+                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_400,c_limit,fl_progressive/assets/images/2023/1/25/a1bd0077-bedc-4b6e-a040-90789747dd881674670405165-offer-banner-400-1080x496-code-_-MYNTRA300.jpg"
+                        alt="">
+                   <div id="accordion">
+                        <div class="">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-link text-black text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Men
+                                    </button>
+                                </h5>
+                            </div>
+                
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-unstyled ps-4">
+                                        <li class="">
+                                            <a class="text-black text-decoration-none" href="../../view/items.html">Topwear</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="text-black text-decoration-none" href="../../view/items.html">Topwear</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-link text-black text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        woman
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                                <ul class="list-unstyled ps-4">
+                                    <li class="">
+                                        <a class="text-black text-decoration-none" href="../../view/items.html">Topwear</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="text-black text-decoration-none" href="../../view/items.html">Topwear</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-link collapsed text-black text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Kids
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                <ul class="">
+                                    <ul class="list-unstyled ps-0">
+                                        <li class="">
+                                            <a class="text-black text-decoration-none" href="../../view/items.html">Topwear</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="text-black text-decoration-none" href="../../view/items.html">Topwear</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card-header" id="headingHome&Living">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-link collapsed text-black text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseHome&Living" aria-expanded="false" aria-controls="collapseHome&Living">
+                                        Home & Living
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseHome&Living" class="collapse" aria-labelledby="headingHome&Living" data-bs-parent="#accordion">
+                                <ul class="">
+                                    <ul class="list-unstyled ps-0">
+                                        <li class="">
+                                            <a class="text-black text-decoration-none" href="../../view/items.html">Topwear</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="text-black text-decoration-none" href="../../view/items.html">Topwear</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid"
+                        src="https://assets.myntassets.com/assets/images/retaillabs/2022/12/30/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA---App-Download-banner.png"
+                        alt="">
+                </nav>
+            </div>
+        </div>
+      </div>
+  </nevbar>
+  <!-- end:nevbar -->
 
 
 

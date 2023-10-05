@@ -1,3 +1,5 @@
+
+
 body {
     font-family: "Lato", sans-serif;
 }
@@ -56,9 +58,22 @@ input[type="checkbox"]{
     box-shadow: 0px -1px 9px -3px #000000;
     border-right: 0px;
 }
+.cursor-pointer{
+    cursor: pointer !important;
+}
 
-
-
+/* icon rotate { */
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+/* icon rotate } */
 
 .desktop-nav-search-input-box-in{
     width: 77% !important;
@@ -97,7 +112,7 @@ input:focus {
 	display: none;
 	/* display: block; */
 	position: absolute;
-	top: 66px;
+	top: 63px;
 	left: 142px;
 	z-index: 0;
   }

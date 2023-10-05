@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+    
+        <!-- title & logo { -->
+            <title>Myntra</title>
+            <link rel="icon" href="../../img/icon/icon-removebg.png" type="image/icon type">
+        <!-- title & logo } -->
+    
+        <!--meta tags { -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--meta tags } -->
+        
+        <!--costom css { -->
+            <link rel="stylesheet" href="../../css/style.css">
+            <link rel="stylesheet" href="../../css/content.css">
+        <!--costom css } -->
+    
+        <!--bootstrap { -->
+            <link rel="stylesheet" href="../../css/bootstrap-5.3.1-dist/css/bootstrap.css">
+            <script src="../../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+        <!--bootstrap } -->
+    
+        <!--icon { -->
+            <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--icon } -->
+        
+        <!-- costom page css { -->
+            <style>
+    
+                body {
+                    width: 100%;
+                    overflow-x: hidden;
+                    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif !important;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+        
+                .dropdown:hover .dropdown-menu {
+                    display: block;
+                }
+        
+                .zoom-div{
+                    overflow: hidden;
+                }
+                .zoom {
+                    transition: transform .5s; /* Animation */
+                }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/content.css">
+                .zoom:hover {
+                transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                }
 
-    <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/js/bootstrap.js"> -->
-    <script src="../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+                .mainDiv:hover .check2 {
+                    display: block;
+                }
+        
+                .mainDiv:hover .check1 {
+                    display: none;
+                    /* pointer-events: none; */
+        
+                }
+                .mainDiv:hover {
+                    box-shadow: 0.5px 0px 10px;
+                }
+                .check2 {
+                    display: none;
+                }
+    
+            </style>
+        <!-- costom page css } -->
+        
+    
+    </head>
 
-    <link rel="stylesheet/scss" type="text/css" href="../css/style1.scss">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<body>
 
-    <link rel="icon" href="../img/icon/icon-removebg.png" type="image/icon type">
-    <style>
-        body {
-            width: 100%;
-            overflow-x: hidden;
-            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif !important;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .mainDiv:hover {
-
-            box-shadow: 0.5px 0px 10px;
-
-        }
-.zoom-div{
-    overflow: hidden;
-}
-.zoom {
-    transition: transform .5s; /* Animation */
-}
-
-.zoom:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-    </style>
-</head>
 
 <!-- start:nevbar -->
 <nevbar class="">
@@ -56,7 +89,7 @@
                             <button class="btn d-block d-lg-none fs-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">&#9776;</button>
                         </div>
                         <div class="col-2">
-                            <a href="-5">
+                            <a href="../index.html">
                                 <div class="logo_image_prop ">
                                     <img src="../img/icon/icon.png" alt="" class="w-100 h-100">
                                 </div>
@@ -824,7 +857,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../view/my/" class="dropdown-item text-decoration-none text-black">
+                                                        <a href="../view/forms/giftcard.html" class="dropdown-item text-decoration-none text-black">
                                                             Gift Cards
                                                         </a>
                                                     </li>
@@ -834,7 +867,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="../view/my/" class="dropdown-item text-decoration-none text-black">
+                                                        <a href="../view/my/myntrainsider.html" class="dropdown-item text-decoration-none text-black">
                                                             Myntra InsiderNew
                                                         </a>
                                                     </li>
@@ -872,18 +905,18 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="" class="text-decoration text-secondary ">
+                            <a href="../view/my/wishlist.html" class="text-decoration text-secondary ">
                                 <li class="px-lg-3 py-2 p-2 text-center  text-center">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                         </svg>
                                     </span>
-                                    <a href="../view/wishlist.html"
+                                    <a href="../view/my/wishlist.html"
                                         class="fs-10 desktop-nav text-decoration-none text-black text-bold d-none d-lg-block">Wishlist</a>
                                 </li>
                             </a>
-                            <a href="" class="text-decoration text-secondary">
+                            <a href="../view/checkout-cart-empty.html" class="text-decoration text-secondary">
                                 <li class="px-lg-3 py-2 p-2 text-center  text-center">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
@@ -1009,6 +1042,7 @@
       </div>
 </nevbar>
 <!-- end:nevbar -->
+
 
 <!-- start:content -->
 <div class="mt-5" style="">
@@ -2510,13 +2544,3 @@
     });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-
-<script>
-    function sizeCard_open() {
-        document.getElementById("mySidebar").style.display = "block";
-    }
-
-    function sizeCard_close() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
-</script>

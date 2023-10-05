@@ -987,7 +987,7 @@
   <!-- end:nevbar -->
 
 <!-- start:content -->
-<div class="mt-0 mb-5" style="padding-top: 100px;padding-bottom: 100px;">
+<div class="mt-5 mb-5 pt-5 pb-5" style="">
 
     <div class="m-5 ">
         <div class="col-12 d-flex justify-content-center align-items-center">
@@ -1068,26 +1068,42 @@
                         </div>
                     </div>
                     <div class="col-8 border-start">
-                        <div class=" m-3">
-                            <h5 class="fw-bold text-body-secondary">Saved Wallets/BNPL</h5>
-                        </div>
-                        <div class="justify-content-center d-flex mb-5">
-                            <div class="col-5 ">
-                                <img class="img-fluid"
-                                    src="https://constant.myntassets.com/mymyntra/assets/img/no-saved-address.svg"
-                                    alt="">
+                        <div class=" m-3 d-flex justify-content-between">
+                            <div class="">
+                                <h5 class="fw-bold text-body-secondary">Saved Addresses</h5>
+                            </div>
+                            <div class="">
+                                <button type="button" class="btn btn-outline-danger ps-4 pe-4" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">+ ADD NEW ADDRESS </button>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <h5 class="fw-bold fs-6">SAVE YOUR ADDRESSES NOW</h5>
-                        </div>
-                        <div class="text-center mb-5">
-                            <p class="text-body-secondary fs-small">Add your home and office addresses and enjoy faster
-                                checkout</p>
-                        </div>
-                        <div class="text-body-secondary d-flex justify-content-center">
-                            <button type="button" class="btn btn-outline-danger ps-4 pe-4" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal" data-bs-whatever="@mdo">+ ADD NEW ADDRESS </button>
+                        <div class="p-3">
+                            <div class="">
+                                <p class="">DEFAULT ADDRESS</p>
+                            </div>
+                            <div class="card p-3 pb-0">
+                                <div class="">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="">Daya</p>
+                                        <p class="text-secondary border p-1 rounded-4 fs-small bg-light ">HOME</p>
+                                    </div>
+                                   <div class="text-secondary">
+                                    <p class="m-0">ganganagar , sector 17</p>
+                                    <p class="m-0">bluedarte</p>
+                                    <p class="m-0">Ganganagar - 335002</p>
+                                    <p class="m-0">Rajasthan</p>
+                                    <p class="m-0">Mobile: 7296984944</p>
+                                   </div>
+                                </div>
+                                <div class="border-top mt-3">
+                                    <div class="col-12 d-flex p-2">
+                                        <button type="button" class="btn col-6" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Edit</button>
+                                        <div class="border-start"></div>
+                                        <button type="button" class="btn col-6">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1194,7 +1210,7 @@
                 <div class="col-12 d-flex">
                     <button type="button" class="btn col-6" data-bs-dismiss="modal">Close</button>
                     <div class="border-start"></div>
-                    <button type="button" class="btn col-6">Send message</button>
+                    <button type="button" class="btn col-6">Save</button>
                 </div>
             </div>
         </div>
