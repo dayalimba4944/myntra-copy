@@ -54,10 +54,10 @@ input[type="checkbox"]{
     height: 50px;
     margin: 10px;
 }
-.bottom_shadow{
+/* .bottom_shadow{
     box-shadow: 0px -1px 9px -3px #000000;
     border-right: 0px;
-}
+} */
 .cursor-pointer{
     cursor: pointer !important;
 }
