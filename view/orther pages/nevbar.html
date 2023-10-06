@@ -1,3 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <!-- title & logo { -->
+            <title>Myntra</title>
+            <link rel="icon" href="../../img/icon/icon-removebg.png" type="image/icon type">
+        <!-- title & logo } -->
+    
+        <!--meta tags { -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--meta tags } -->
+        
+        <!--costom css { -->
+            <link rel="stylesheet" href="../../css/style.css">
+            <link rel="stylesheet" href="../../css/content.css">
+        <!--costom css } -->
+    
+        <!--bootstrap { -->
+            <link rel="stylesheet" href="../../css/bootstrap-5.3.1-dist/css/bootstrap.css">
+            <script src="../../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+        <!--bootstrap } -->
+    
+        <!--icon { -->
+            <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--icon } -->
+        
+        <!-- jQuery {-->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- jQuery }-->
+
+        <!-- costom page css { -->
+            <style>
+    
+                body {
+                    width: 100%;
+                    overflow-x: hidden;
+                    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif !important;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+        
+                .dropdown:hover .dropdown-menu {
+                    display: block;
+                }
+        
+                .zoom-div{
+                    overflow: hidden;
+                }
+                .zoom {
+                    transition: transform .5s; /* Animation */
+                }
+
+                .zoom:hover {
+                transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                }
+
+                .mainDiv:hover .check2 {
+                    display: block;
+                }
+        
+                .mainDiv:hover .check1 {
+                    display: none;
+                    /* pointer-events: none; */
+        
+                }
+                .mainDiv:hover {
+                    box-shadow: 0.5px 0px 10px;
+                }
+                .check2 {
+                    display: none;
+                }
+                swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                swiper-slide img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .hide{
+                    display: none;
+                }
+
+
+
+
+                /* 
+                this page
+                */
+                
+            </style>
+        <!-- costom page css } -->
+        
+    
+    </head>
+<body >
 
 <!-- start:nevbar -->
 <nevbar class="w-100">
@@ -10,16 +116,16 @@
                             <button class="btn d-block d-lg-none fs-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">&#9776;</button>
                         </div>
                         <div class="col-2">
-                            <a href="../index.html">
+                            <a href="../../index.html">
                                 <div class="logo_image_prop ">
-                                    <img src="../img/icon/icon.png" alt="" class="w-100 h-100">
+                                    <img src="../../img/icon/icon.png" alt="" class="w-100 h-100">
                                 </div>
                             </a>
                         </div>
                         <div class="col-10  d-none d-lg-block ml-3">
                             <ul class="d-flex align-items-center justify-content-start list-unstyled mb-0 ">
                                 <li class="px-md-3  fw-bold fs-small py-4 nav-item-dropdown border-danger">
-                                    <a href="../view/category.html"
+                                    <a href="../../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">MEN</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row ">
@@ -30,66 +136,66 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="p-0 list-unstyled">
                                                 <h6 class="text-danger">Topwear</h6>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
 
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
 
                                                 <h6 class="color-l6">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-danger">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-danger">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
 
                                             </ul>
@@ -97,48 +203,48 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-danger">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-danger">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-danger">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
@@ -153,7 +259,7 @@
                                     </ul>
                                 </div>
                                 <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-warning">
-                                    <a href="../view/category.html"
+                                    <a href="../../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">WOMEN</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row">
@@ -164,66 +270,66 @@
                                         <li class="dropdown-li col-3 ">
                                             <ul class="p-0 list-unstyled">
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
 
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
 
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
 
                                             </ul>
@@ -231,48 +337,48 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
@@ -287,7 +393,7 @@
                                     </ul>
                                 </div>
                                 <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-primary">
-                                    <a href="../view/category.html"
+                                    <a href="../../view/category.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">KIDS</a>
                                 </li>
                                 <div class="dropdown-item-card text-start  row">
@@ -298,66 +404,66 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="p-0 list-unstyled">
                                                 <h6 class="text-primary">Topwear</h6>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
 
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
 
                                                 <h6 class="text-primary">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-primary">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-primary">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
 
                                             </ul>
@@ -365,48 +471,48 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-primary">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-primary">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-primary">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
@@ -421,7 +527,7 @@
                                     </ul>
                                 </div>
                                 <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-warning">
-                                    <a href="../view/home-living.html"
+                                    <a href="../../view/home-living.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase white-space-nowrap">HOME
                                         & LIVING</a>
                                 </li>
@@ -433,66 +539,66 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="p-0 list-unstyled">
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
 
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
 
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
 
                                             </ul>
@@ -500,48 +606,48 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-warning">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
@@ -556,7 +662,7 @@
                                     </ul>
                                 </div>
                                 <li class="px-md-3  fw-bold fs-small py-4  nav-item-dropdown border-info">
-                                    <a href="../view/items.html"
+                                    <a href="../../view/items.html"
                                         class="desktop-nav text-decoration-none text-black text-bold text-uppercase">
                                         BEAUTY</a>
                                 </li>
@@ -568,66 +674,66 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="p-0 list-unstyled">
                                                 <h6 class="text-info">Topwear</h6>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Topwear</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">T-Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Casual Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Formal Shirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweatshirts</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Sweaters</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Jackets</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Blazers</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Suits</a></li>
-                                                <li class=""><a class="dropdown-item" href="../view/items.html">Coats</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Topwear</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">T-Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Casual Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Formal Shirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Sweaters</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Jackets</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Blazers</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Suits</a></li>
+                                                <li class=""><a class="dropdown-item" href="../../view/items.html">Coats</a></li>
 
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
 
                                                 <h6 class="color-l6">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-info">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-info">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
 
                                             </ul>
@@ -635,48 +741,48 @@
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-info">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
                                                 </li>
                                                 <h6 class="text-info">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-li col-3">
                                             <ul class="list-unstyled">
                                                 <h6 class="text-info">Topwear</h6>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Topwear</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Topwear</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">T-Shirts</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">T-Shirts</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Casual
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Casual
                                                         Shirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Formal
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Formal
                                                         Shirts</a></li>
                                                 <li class="dropdown-li"><a class="dropdown-item"
-                                                        href="../view/items.html">Sweatshirts</a></li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Sherwanis</a>
+                                                        href="../../view/items.html">Sweatshirts</a></li>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Sherwanis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Dhotis</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Dhotis</a>
                                                 </li>
-                                                <li class="dropdown-li"><a class="dropdown-item" href="../view/items.html">Kurtas</a>
+                                                <li class="dropdown-li"><a class="dropdown-item" href="../../view/items.html">Kurtas</a>
                                                 </li>
                                                 <li class="dropdown-li">
                                                     <hr style="width: 150px;">
@@ -748,7 +854,7 @@
                                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                                         </svg>
                                     </span>
-                                    <a href="../view/my/profile.html" class="fs-10  text-decoration-none text-black text-bold d-none d-lg-block">Profile</a>
+                                    <a href="../../view/my/profile.html" class="fs-10  text-decoration-none text-black text-bold d-none d-lg-block">Profile</a>
                                 </li>
                             </a>
                             <div class="dropdown-profile-list text-start  row ">
@@ -826,25 +932,25 @@
                                     </ul>
                                 </div>
                             </div>
-                            <a href="../view/my/wishlist.html" class="text-decoration text-secondary ">
+                            <a href="../../view/my/wishlist.html" class="text-decoration text-secondary ">
                                 <li class="px-lg-3 py-2 p-2 text-center  text-center">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                         </svg>
                                     </span>
-                                    <a href="../view/my/wishlist.html"
+                                    <a href="../../view/my/wishlist.html"
                                         class="fs-10 desktop-nav text-decoration-none text-black text-bold d-none d-lg-block">Wishlist</a>
                                 </li>
                             </a>
-                            <a href="../view/checkout-cart-empty.html" class="text-decoration text-secondary">
+                            <a href="../../view/checkout-cart-empty.html" class="text-decoration text-secondary">
                                 <li class="px-lg-3 py-2 p-2 text-center  text-center">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                                             <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
                                         </svg>
                                     </span>
-                                    <a href="../view/checkout-cart-empty.html"
+                                    <a href="../../view/checkout-cart-empty.html"
                                         class="fs-10 desktop-nav text-decoration-none text-black text-bold d-none d-lg-block">bag</a>
                                 </li>
                             </a>
@@ -857,10 +963,10 @@
 
 
 
-    <!-- 2 -->
+    <!-- side:nevbar {-->
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -869,97 +975,131 @@
                     <img class="img-fluid"
                         src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_400,c_limit,fl_progressive/assets/images/2023/1/25/a1bd0077-bedc-4b6e-a040-90789747dd881674670405165-offer-banner-400-1080x496-code-_-MYNTRA300.jpg"
                         alt="">
-                   <div id="accordion">
-                        <div class="">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed btn-link text-black text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Men
-                                    </button>
-                                </h5>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header ">
+                            <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-Men" aria-expanded="false" aria-controls="collapse-Men">
+                                Men
+                            </button>
+                            </h2>
+                            <div id="collapse-Men" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pt-0">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item ">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Topwear #1
+                                        </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li class="">
+                                                    <a class="text-black text-decoration-none" href="../../items.html">T-Shirts</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Topwear #2
+                                        </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li class="">
+                                                <a class="text-black text-decoration-none" href="../../items.html">T-Shirts</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="text-black text-decoration-none" href="../../items.html">T-Shirts</a>
+                                            </li>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Topwear #3
+                                        </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li class="">
+                                                <a class="text-black text-decoration-none" href="../../items.html">T-Shirts</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="text-black text-decoration-none" href="../../items.html">T-Shirts</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="text-black text-decoration-none" href="../../items.html">T-Shirts</a>
+                                            </li>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
                             </div>
-                
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                                <div class="card-body">
-                                    <ul class="list-unstyled ps-4">
-                                        <li class="">
-                                            <a class="text-black text-decoration-none" href="../view/items.html">Topwear</a>
-                                        </li>
-                                        <li class="">
-                                            <a class="text-black text-decoration-none" href="../view/items.html">Topwear</a>
-                                        </li>
-                                    </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-woman" aria-expanded="false" aria-controls="collapse-woman">
+                                woman
+                            </button>
+                            </h2>
+                            <div id="collapse-woman" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>... more links.</strong>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-Kids" aria-expanded="false" aria-controls="collapse-Kids">
+                                    Kids
+                                </button>
+                            </h2>
+                            <div id="collapse-Kids" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    ... more links
                                 </div>
                             </div>
-                        </div>
-                        <div class="">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed btn-link text-black text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        woman
-                                    </button>
-                                </h5>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                                <ul class="list-unstyled ps-4">
-                                    <li class="">
-                                        <a class="text-black text-decoration-none" href="../view/items.html">Topwear</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="text-black text-decoration-none" href="../view/items.html">Topwear</a>
-                                    </li>
-                                </ul>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-HomeLiving" aria-expanded="false" aria-controls="collapse-HomeLiving">
+                                    Home & Living
+                                </button>
+                            </h2>
+                            <div id="collapse-HomeLiving" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>... more links</strong>
                             </div>
-                        </div>
-                        <div class="">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed btn-link collapsed text-black text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Kids
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
-                                <ul class="">
-                                    <ul class="list-unstyled ps-0">
-                                        <li class="">
-                                            <a class="text-black text-decoration-none" href="../view/items.html">Topwear</a>
-                                        </li>
-                                        <li class="">
-                                            <a class="text-black text-decoration-none" href="../view/items.html">Topwear</a>
-                                        </li>
-                                    </ul>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="card-header" id="headingHome&Living">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed btn-link collapsed text-black text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseHome&Living" aria-expanded="false" aria-controls="collapseHome&Living">
-                                        Home & Living
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseHome&Living" class="collapse" aria-labelledby="headingHome&Living" data-bs-parent="#accordion">
-                                <ul class="">
-                                    <ul class="list-unstyled ps-0">
-                                        <li class="">
-                                            <a class="text-black text-decoration-none" href="../view/items.html">Topwear</a>
-                                        </li>
-                                        <li class="">
-                                            <a class="text-black text-decoration-none" href="../view/items.html">Topwear</a>
-                                        </li>
-                                    </ul>
-                                </ul>
                             </div>
                         </div>
                     </div>
-                    <img class="img-fluid"
+                    <div class="d-block">
+                        <ul class="list-unstyled">
+                            <li class="p-2"><a href="Overview.html" class="text-black text-decoration-none">Account</a></li>
+                            <li class="p-2"><a href="my-orders.html" class="text-black text-decoration-none">Orders</a></li>
+                            <li class="p-2"><a href="" class="text-black text-decoration-none">Myntra Studio <span>new</span></a></li>
+                            <li class="p-2"><a href="myntrapoints.html" class="text-black text-decoration-none">Myntra Mall <span>new</span></a></li>
+                            <li class="p-2"><a href="/myntrainsider.html" class="text-black text-decoration-none">Myntra Insider</a></li>
+                            <li class="p-2"><a href="../forms/giftcard.html" class="text-black text-decoration-none">Gift Cards</a></li>
+                            <li class="p-2"><a href="" class="text-black text-decoration-none">Contact Us</a></li>
+                            <li class="p-2"><a href="" class="text-black text-decoration-none">FAQs</a></li>
+                            <li class="p-2"><a href="" class="text-black text-decoration-none">Legal</a></li>
+                        </ul>
+                    </div>
+                   <img class="img-fluid"
                         src="https://assets.myntassets.com/assets/images/retaillabs/2022/12/30/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA---App-Download-banner.png"
                         alt="">
                 </nav>
             </div>
         </div>
       </div>
+    <!-- side:nevbar }-->
+
 </nevbar>
 <!-- end:nevbar -->
