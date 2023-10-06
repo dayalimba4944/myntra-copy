@@ -506,3 +506,24 @@ input:focus {
 #button-1 .layer {
   transition: 0.3s ease all;
 }
+
+
+
+
+
+
+
+
+/* nevbar  */
+
+.accordion-button:not(.collapsed) {
+    color: black !important; 
+    background-color: white !important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 white !important;
+}
+.accordion-button:focus {
+   
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
