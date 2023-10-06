@@ -5,7 +5,7 @@
     
     <!-- title & logo { -->
         <title>Myntra</title>
-        <link rel="icon" href="../../img/icon/icon-removebg.png" type="image/icon type">
+        <link rel="icon" href="../img/icon/icon-removebg.png" type="image/icon type">
     <!-- title & logo } -->
 
     <!--meta tags { -->
@@ -14,13 +14,13 @@
     <!--meta tags } -->
     
     <!--costom css { -->
-        <link rel="stylesheet" href="../../css/style.css">
-        <link rel="stylesheet" href="../../css/content.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/content.css">
     <!--costom css } -->
 
     <!--bootstrap { -->
-        <link rel="stylesheet" href="../../css/bootstrap-5.3.1-dist/css/bootstrap.css">
-        <script src="../../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap-5.3.1-dist/css/bootstrap.css">
+        <script src="../css/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
     <!--bootstrap } -->
 
     <!--icon { -->
@@ -28,50 +28,69 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--icon } -->
     
+    <!-- jQuery {-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery }-->
+
     <!-- costom page css { -->
         <style>
 
-body {
-            width: 100%;
-            overflow-x: hidden;
-            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif !important;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+            body {
+                width: 100%;
+                overflow-x: hidden;
+                font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+    
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+    
+            .zoom-div{
+                overflow: hidden;
+            }
+            .zoom {
+                transition: transform .5s; /* Animation */
+            }
 
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
+            .zoom:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
 
+            .mainDiv:hover .check2 {
+                display: block;
+            }
+    
+            .mainDiv:hover .check1 {
+                display: none;
+                /* pointer-events: none; */
+    
+            }
+            .mainDiv:hover {
+                box-shadow: 0.5px 0px 10px;
+            }
+            .check2 {
+                display: none;
+            }
+            swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-        /* .card-s-img {
-            display: none !important;
-        }
-        
-        .card-s-img:hover {
-            display: block !important;
-        }
-        .card-f-img {
-            display: block !important;
-        }
-        
-        .card-f-img:hover {
-            display: none !important;
-        } */
-        .mainDiv:hover .check2 {
-            display: block;
-        }
-
-        .mainDiv:hover .check1 {
-            display: none;
-            /* pointer-events: none; */
-
-        }
-
-        .check2 {
-            display: none;
-        }
-
+            swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .hide{
+                display: none;
+            }
         </style>
     <!-- costom page css } -->
     
